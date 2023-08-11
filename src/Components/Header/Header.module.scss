@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.header {
+    font-size: 15px;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.links {
+    font-size: 2em;
+    display: flex;
+    gap: 60px;
+}
+
+.link {
+    color: rgba($font_color, 0.7);
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.link:hover {
+    color: $font_color;
+}
