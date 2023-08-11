@@ -1,55 +1,148 @@
-@import '../../variables';
+@import "../../variables";
 
 .contact {
-    font-size: 16px;
-    height: 100vh;
-    overflow: hidden;
+	font-size: 16px;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .title {
-    position: relative;
-    width: 30%;
-    z-index: 1;
-    font-size: 4.5rem;
-    color: $text_color;
-    font-family: "Baskerville";
-    padding-top: 5rem;
-    padding-left: 2.5%;
-    letter-spacing: 0.3rem;
+	position: relative;
+	width: 30%;
+	z-index: 1;
+	font-size: 4.5rem;
+	color: $text_color;
+	font-family: "Baskerville";
+	padding-top: 4rem;
+	padding-left: 2.5%;
+	letter-spacing: 0.3rem;
 }
 
 .blocks {
-    rotate: 10deg;
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+	rotate: 10deg;
+	width: 100%;
+	display: flex;
+	gap: 20px;
 }
 
 .image {
-    margin-top: 70vh;
-    width: 60%;
-    margin-left: 20%;
+	margin-top: 70vh;
+	width: 60%;
+	margin-left: 20%;
 }
 
 .block {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    z-index: 1000;
-    height: 200vh;
-    margin-top: -50vh;
-    width: 46%;
-    background: linear-gradient(270deg, #876D9D 0%, rgba(135, 109, 157, 0.00) 100%);
-    cursor: pointer;
-    transition: .2s linear;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	z-index: 1000;
+	height: 200vh;
+	margin-top: -50vh;
+	width: 46%;
+	background: linear-gradient(
+		270deg,
+		#876d9d 0%,
+		rgba(135, 109, 157, 0) 100%
+	);
+	transition: 0.2s linear;
+}
+
+a {
+    text-decoration: none;
 }
 
 .another {
-    background: linear-gradient(90deg, #876D9D 0%, rgba(135, 109, 157, 0.00) 100%);
+	background: linear-gradient(90deg, #876d9d 0%, rgba(135, 109, 157, 0) 100%);
+}
+
+.content {
+	margin-left: 10%;
+	margin-top: 70vh;
+	width: 70%;
+	height: 25rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.first {
+	background-image: url("../../images/email.svg");
+	transition: 0.2s linear;
+}
+
+.second {
+	background-image: url("../../images/telegram.svg");
+	transition: 0.2s linear;
+}
+
+.under_content {
+	margin-top: 2rem;
+	color: $text_not_chosen_color;
+	margin-left: 10%;
+	font-size: 3rem;
+    transition: .2s linear;
+}
+
+.button {
+    display: none;
+}
+
+.text {
+	display: none;
+	transition: 0.2s linear;
+}
+
+.important_text {
+	display: none;
 }
 
 .block:hover {
-    background: $main_color;
+	background: $main_color;
+
+	.first {
+		background-image: url("../../images/email1.svg");
+	}
+
+	.second {
+		background-image: url("../../images/telegram1.svg");
+	}
+
+	.text {
+		display: block;
+		color: $text_color;
+		font-size: 2rem;
+	}
+
+	.important_text {
+		display: block;
+		color: $bg_color;
+		font-size: 3rem;
+	}
+
+    .under_content {
+        color: $text_color;
+    }
+
+    .button {
+        margin-top: 3rem;
+        display: block;
+        width: 80%;
+        font-family: 'Nunito';
+        font-size: 2.5rem;
+        height: 5rem;
+        border: none;
+        cursor: pointer;
+        background-color: $bg_color;
+        color: $text_color;
+        border-radius: 20px;
+        transition: .3s linear;
+    }
+
+    .button:hover {
+        scale: 1.02;
+        box-shadow: 2px 2px 5px black;
+    }
 }
