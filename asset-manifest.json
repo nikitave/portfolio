@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.915f8e0e.css",
-    "main.js": "/portfolio/static/js/main.debb0972.js",
+    "main.css": "/portfolio/static/css/main.63141fa2.css",
+    "main.js": "/portfolio/static/js/main.89ef69df.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/backgroundImage.png": "/portfolio/static/media/backgroundImage.00960000ec3ff9418e1f.png",
     "static/media/Nunito-Regular.ttf": "/portfolio/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
     "static/media/Baskervville-Regular.ttf": "/portfolio/static/media/Baskervville-Regular.f901739d83410218a9d2.ttf",
-    "static/media/telegram.svg": "/portfolio/static/media/telegram.2c7a1c549d74444580f1162bd5e4b4ec.svg",
+    "static/media/telegram.svg": "/portfolio/static/media/telegram.a5e315545e2c15c27b8bd0c0ff55f46d.svg",
+    "static/media/telegram1.svg": "/portfolio/static/media/telegram1.7c704e910bf9c4afb1ba.svg",
     "index.html": "/portfolio/index.html",
-    "static/media/email.svg": "/portfolio/static/media/email.fe41b669501be5c95538335ba79427b9.svg",
-    "main.915f8e0e.css.map": "/portfolio/static/css/main.915f8e0e.css.map",
-    "main.debb0972.js.map": "/portfolio/static/js/main.debb0972.js.map",
+    "static/media/email.svg": "/portfolio/static/media/email.383441bc7737846758e171dc380a532b.svg",
+    "static/media/email1.svg": "/portfolio/static/media/email1.20d5284f7d48601c902c.svg",
+    "main.63141fa2.css.map": "/portfolio/static/css/main.63141fa2.css.map",
+    "main.89ef69df.js.map": "/portfolio/static/js/main.89ef69df.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.915f8e0e.css",
-    "static/js/main.debb0972.js"
+    "static/css/main.63141fa2.css",
+    "static/js/main.89ef69df.js"
   ]
 }
