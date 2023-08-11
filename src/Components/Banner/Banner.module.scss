@@ -1,0 +1,56 @@
+@import '../../variables';
+
+.banner {
+    height: 90vh;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 16px;
+    display: flex;
+}
+
+.content {
+    padding-top: 40vh;
+    padding-left: 2.5%;
+}
+
+.text {
+    font-size: 3.125rem;
+    color: $text_color;
+}
+
+.title {
+    color: $main_color;
+    font-family: "Baskerville";
+    margin-bottom: 2rem;
+    font-size: 8rem;
+    letter-spacing: 1rem;
+}
+
+.button {
+    width: 30rem;
+    font-size: 2em;
+    height: 5rem;
+    outline: none;
+    border: none;
+    background-color: $main_color;
+    color: $bg_color;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s linear;
+    font-family: "Nunito";
+}
+
+.button:hover {
+    scale: 1.02;
+    box-shadow: 2px 2px 5px black;
+}
+
+.image_block {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image {
+    height: 100%;
+    z-index: 1;
+}

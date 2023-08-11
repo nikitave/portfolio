@@ -1,25 +1,39 @@
 @import '../../variables';
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
     font-size: 15px;
-    height: 6rem;
+    // height: 6rem;
+    height: 10vh;
     display: flex;
     align-items: center;
-    padding-left: 3rem;
+    justify-content: flex-end;
+    // z-index: 1000;
 }
 
 .links {
     font-size: 2em;
     display: flex;
-    gap: 60px;
+    gap: 4rem;
 }
 
 .link {
-    color: rgba($font_color, 0.7);
+    color: rgba($text_color, 0.7);
     text-decoration: none;
     transition: .2s linear;
 }
 
 .link:hover {
-    color: $font_color;
+    color: $text_color;
+}
+
+.active {
+    color: $main_color;
+}
+
+.active:hover {
+    color: $main_color;
 }

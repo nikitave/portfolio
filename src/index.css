@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"),
+  url("./fonts/nunito/Nunito-Regular.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Baskerville";
+  src: local("Baskerville") 
+  url("./fonts/baskerville/Baskervville-Regular.ttf") format("truetype");
+}
