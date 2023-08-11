@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8977faf9.css",
-    "main.js": "/portfolio/static/js/main.15e834d7.js",
+    "main.css": "/portfolio/static/css/main.c3584d15.css",
+    "main.js": "/portfolio/static/js/main.381e152e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/background.png": "/portfolio/static/media/background.f4dab457fd2b79add04f.png",
+    "static/media/backgroundImage.png": "/portfolio/static/media/backgroundImage.00960000ec3ff9418e1f.png",
+    "static/media/Nunito-Regular.ttf": "/portfolio/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
+    "static/media/Baskervville-Regular.ttf": "/portfolio/static/media/Baskervville-Regular.f901739d83410218a9d2.ttf",
     "index.html": "/portfolio/index.html",
-    "main.8977faf9.css.map": "/portfolio/static/css/main.8977faf9.css.map",
-    "main.15e834d7.js.map": "/portfolio/static/js/main.15e834d7.js.map",
+    "main.c3584d15.css.map": "/portfolio/static/css/main.c3584d15.css.map",
+    "main.381e152e.js.map": "/portfolio/static/js/main.381e152e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8977faf9.css",
-    "static/js/main.15e834d7.js"
+    "static/css/main.c3584d15.css",
+    "static/js/main.381e152e.js"
   ]
 }
