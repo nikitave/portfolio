@@ -31,7 +31,7 @@ const Header = () => {
           })}
           to="/contact-me"
         >
-          Contact Us
+          Contact Me
         </Link>
       </div>
     </div>
