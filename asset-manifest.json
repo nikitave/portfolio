@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c3584d15.css",
-    "main.js": "/portfolio/static/js/main.280c6244.js",
+    "main.css": "/portfolio/static/css/main.7e7ee1fb.css",
+    "main.js": "/portfolio/static/js/main.debb0972.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/background.png": "/portfolio/static/media/background.f4dab457fd2b79add04f.png",
     "static/media/backgroundImage.png": "/portfolio/static/media/backgroundImage.00960000ec3ff9418e1f.png",
     "static/media/Nunito-Regular.ttf": "/portfolio/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
     "static/media/Baskervville-Regular.ttf": "/portfolio/static/media/Baskervville-Regular.f901739d83410218a9d2.ttf",
+    "static/media/telegram.svg": "/portfolio/static/media/telegram.2c7a1c549d74444580f1162bd5e4b4ec.svg",
     "index.html": "/portfolio/index.html",
-    "main.c3584d15.css.map": "/portfolio/static/css/main.c3584d15.css.map",
-    "main.280c6244.js.map": "/portfolio/static/js/main.280c6244.js.map",
+    "static/media/email.svg": "/portfolio/static/media/email.fe41b669501be5c95538335ba79427b9.svg",
+    "main.7e7ee1fb.css.map": "/portfolio/static/css/main.7e7ee1fb.css.map",
+    "main.debb0972.js.map": "/portfolio/static/js/main.debb0972.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3584d15.css",
-    "static/js/main.280c6244.js"
+    "static/css/main.7e7ee1fb.css",
+    "static/js/main.debb0972.js"
   ]
 }
