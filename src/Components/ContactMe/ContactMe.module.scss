@@ -1,0 +1,55 @@
+@import '../../variables';
+
+.contact {
+    font-size: 16px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title {
+    position: relative;
+    width: 30%;
+    z-index: 1;
+    font-size: 4.5rem;
+    color: $text_color;
+    font-family: "Baskerville";
+    padding-top: 8rem;
+    padding-left: 2.5%;
+    letter-spacing: 0.3rem;
+}
+
+.blocks {
+    rotate: 10deg;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image {
+    margin-top: 70vh;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    z-index: 1000;
+    height: 200vh;
+    margin-top: -50vh;
+    width: 46%;
+    background: linear-gradient(270deg, #876D9D 0%, rgba(135, 109, 157, 0.00) 100%);
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.another {
+    background: linear-gradient(90deg, #876D9D 0%, rgba(135, 109, 157, 0.00) 100%);
+}
+
+.block:hover {
+    background: $main_color;
+}

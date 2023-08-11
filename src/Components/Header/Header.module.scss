@@ -6,12 +6,11 @@
     left: 0;
     width: 95%;
     font-size: 15px;
-    // height: 6rem;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    // z-index: 1000;
+    z-index: 1;
 }
 
 .links {
@@ -36,4 +35,8 @@
 
 .active:hover {
     color: $main_color;
+}
+
+.activeD {
+    color: $bg_color;
 }

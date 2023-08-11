@@ -4,7 +4,7 @@ import styles from './AboutMe.module.scss'
 const AboutMe = () => {
     return (
         <div className={styles.about}>
-            About Me!
+            <div className={styles.title}>About Me</div>
         </div>
     )
 }
