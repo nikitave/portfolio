@@ -88,6 +88,7 @@ a {
 
 .button {
     display: none;
+    transition: .2s linear;
 }
 
 .text {
@@ -97,6 +98,7 @@ a {
 
 .important_text {
 	display: none;
+    transition: .2s linear;
 }
 
 .block:hover {
@@ -124,6 +126,7 @@ a {
 
     .under_content {
         color: $text_color;
+        transition: .2s linear;
     }
 
     .button {
