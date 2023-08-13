@@ -1,7 +1,136 @@
+@import "../../variables";
 
-@import '../../variables';
-
+.about {
+	height: 100vh;
+	overflow: hidden;
+	font-size: 16px;
+}
 
 .title {
-    font-size: 4.5rem;
+	position: relative;
+	width: 30%;
+	z-index: 1;
+	font-size: 4.5rem;
+	color: $text_color;
+	font-family: "Baskerville";
+	padding-top: 4rem;
+	padding-left: 2.5%;
+	letter-spacing: 0.3rem;
+}
+
+.blocks {
+	rotate: 5deg;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	z-index: 1000;
+	height: 150vh;
+	margin-top: -30vh;
+	width: 32%;
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+	transition: 0.2s linear;
+	// justify-content: center;
+}
+
+.first {
+	background: linear-gradient(90deg, #876d9d 0%, rgba(135, 109, 157, 0) 100%);
+}
+
+.second {
+	background: linear-gradient(270deg, #876D9D 0%, rgba(135, 109, 157, 0.00) 100%);
+}
+
+.back_img {
+	z-index: 1000;
+	height: 150vh;
+	margin-top: -30vh;
+	width: 32%;
+	background-image: url("../../images/me.png");
+	filter: saturate(0);
+	background-size: cover;
+	transition: 0.2s linear;
+}
+
+.back_img:hover {
+	filter: saturate(1);
+}
+
+.short {
+	margin-top: 50vh;
+	width: 90%;
+	padding-left: 5%;
+	font-weight: 600;
+}
+
+.short_title {
+	font-size: 3rem;
+	color: $secondary-bg-color;
+	margin-bottom: 2rem;
+	transition: .2s linear;
+}
+
+.short_info {
+	margin-bottom: 1.5rem;
+	font-size: 2rem;
+	color: $secondary-bg-color;
+	line-height: 2.4rem;
+	transition: .2s linear;
+}
+
+.short_info span {
+	transition: .2s linear;
+}
+
+.text {
+	margin-top: 50vh;
+	width: 90%;
+	margin-left: 5%;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	color: $secondary-bg-color;
+	transition: .2s linear;
+}
+
+.text span {
+	transition: .2s linear;
+}
+
+.link {
+	color: $secondary-bg-color;
+}
+
+.block:hover {
+	background: $main_color;
+
+	.short_title {
+		color: $text_color;
+	}
+
+	.short_info {
+		color: $text_color;
+	}
+
+	.short_info span {
+		color: $bg_color;
+	}
+
+	.text {
+		color: $text_color;
+	}
+
+	.text span {
+		color: $bg_color;
+	}
+
+	.link {
+		color: $bg_color;
+		text-decoration: underline;
+	}
 }

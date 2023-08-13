@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import { Link, useLocation } from "react-router-dom";
 import cn from "classnames";
 
-const Header = ( {color} ) => {
+const Header = ( {color, colorTwo} ) => {
   const location = useLocation();
 
   return (
@@ -12,6 +12,7 @@ const Header = ( {color} ) => {
         <Link
           className={cn(styles.link, {
             [styles.active]: location.pathname === "/about-me",
+            [styles.activeD]: colorTwo
           })}
           to="/about-me"
         >
