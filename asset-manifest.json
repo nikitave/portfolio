@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e09ddf29.css",
-    "main.js": "/portfolio/static/js/main.89ef69df.js",
+    "main.css": "/portfolio/static/css/main.23f3b41d.css",
+    "main.js": "/portfolio/static/js/main.b9cd8c27.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/backgroundImage.png": "/portfolio/static/media/backgroundImage.00960000ec3ff9418e1f.png",
+    "static/media/me.png": "/portfolio/static/media/me.04bb8846e69c073e99fd.png",
     "static/media/Nunito-Regular.ttf": "/portfolio/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
+    "static/media/Nunito-SemiBold.ttf": "/portfolio/static/media/Nunito-SemiBold.77c1e330694154d3efed.ttf",
     "static/media/Baskervville-Regular.ttf": "/portfolio/static/media/Baskervville-Regular.f901739d83410218a9d2.ttf",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.a5e315545e2c15c27b8bd0c0ff55f46d.svg",
     "static/media/telegram1.svg": "/portfolio/static/media/telegram1.7c704e910bf9c4afb1ba.svg",
     "index.html": "/portfolio/index.html",
     "static/media/email.svg": "/portfolio/static/media/email.383441bc7737846758e171dc380a532b.svg",
     "static/media/email1.svg": "/portfolio/static/media/email1.20d5284f7d48601c902c.svg",
-    "main.e09ddf29.css.map": "/portfolio/static/css/main.e09ddf29.css.map",
-    "main.89ef69df.js.map": "/portfolio/static/js/main.89ef69df.js.map",
+    "main.23f3b41d.css.map": "/portfolio/static/css/main.23f3b41d.css.map",
+    "main.b9cd8c27.js.map": "/portfolio/static/js/main.b9cd8c27.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e09ddf29.css",
-    "static/js/main.89ef69df.js"
+    "static/css/main.23f3b41d.css",
+    "static/js/main.b9cd8c27.js"
   ]
 }
