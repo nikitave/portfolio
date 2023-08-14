@@ -1,12 +1,13 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
-import Banner from "./Components/Banner/Banner";
 import Header from "./Components/Header/Header";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import MyWorks from "./Components/MyWorks/MyWorks";
 import ContactMe from "./Components/ContactMe/ContactMe";
 import cn from "classnames";
 import { useState } from "react";
+import Main from "./Components/Main/Main";
+
 
 function App() {
 	const location = useLocation();
@@ -23,7 +24,7 @@ function App() {
 		<div className={cn("app", location === "portfolio" ? "back" : "")}>
 			<Header color={color} colorTwo={colorTwo} />
 			<Routes>
-				<Route path="/portfolio" element={<Banner />} />
+				<Route path="/portfolio" element={<Main />} />
 				<Route path="/about-me" element={<AboutMe onHover={handleHoverTwo} />} />
 				<Route path="/my-works" element={<MyWorks />} />
 				<Route

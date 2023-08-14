@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./MyWorks.module.scss";
 import cn from "classnames";
+import { motion } from "framer-motion";
 import fc1 from "../../images/fc1.png";
 import fc2 from "../../images/fc2.png";
 import fc3 from "../../images/fc3.png";
@@ -25,7 +26,13 @@ const MyWorks = () => {
 		<div className={styles.works}>
 			<div className={styles.title}>My Works</div>
 			<div className={styles.blocks}>
-				<div className={cn(styles.block, styles.first)}>
+				<motion.div
+					className={cn(styles.block, styles.first)}
+					initial={{ opacity: 0, x: -100 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+					viewport={{ once: true }}
+				>
 					<div className={styles.left}>
 						<div className={styles.left_info}>
 							<div className={styles.left_info_title}>
@@ -78,8 +85,14 @@ const MyWorks = () => {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className={cn(styles.block, styles.second)}>
+				</motion.div>
+				<motion.div
+					className={cn(styles.block, styles.second)}
+					initial={{ opacity: 0, x: 100 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+					viewport={{ once: true }}
+				>
 					<div className={styles.left}>
 						<div className={styles.left_info}>
 							<div className={styles.left_info_title}>
@@ -121,8 +134,14 @@ const MyWorks = () => {
 							/>
 						</div>
 					</div>
-				</div>
-				<div className={cn(styles.block, styles.first)}>
+				</motion.div>
+				<motion.div
+					className={cn(styles.block, styles.first)}
+					initial={{ opacity: 0, x: -100 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+					viewport={{ once: true }}
+				>
 					<div className={styles.left}>
 						<div className={styles.left_info}>
 							<div className={styles.left_info_title}>
@@ -188,8 +207,14 @@ const MyWorks = () => {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className={cn(styles.block, styles.second)}>
+				</motion.div>
+				<motion.div
+					className={cn(styles.block, styles.second)}
+					initial={{ opacity: 0, x: 100 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+					viewport={{ once: true }}
+				>
 					<div className={styles.left}>
 						<div className={styles.left_info}>
 							<div className={styles.left_info_title}>
@@ -232,8 +257,14 @@ const MyWorks = () => {
 							/>
 						</div>
 					</div>
-				</div>
-				<div className={cn(styles.block, styles.first)}>
+				</motion.div>
+				<motion.div
+					className={cn(styles.block, styles.first)}
+					initial={{ opacity: 0, x: -100 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+					viewport={{ once: true }}
+				>
 					<div className={styles.left}>
 						<div className={styles.left_info}>
 							<div className={styles.left_info_title}>
@@ -294,7 +325,7 @@ const MyWorks = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);

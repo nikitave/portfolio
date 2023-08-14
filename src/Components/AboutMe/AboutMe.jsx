@@ -1,18 +1,27 @@
 import React from "react";
 import styles from "./AboutMe.module.scss";
 import cn from "classnames";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const AboutMe = ({ onHover }) => {
 	return (
 		<div className={styles.about}>
 			<div className={styles.title}>About Me</div>
 			<div className={styles.blocks}>
-				<div className={styles.back_img}></div>
-				<div
+				<motion.div
+					className={styles.back_img}
+					initial={{ opacity: 0, y: -100 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.3 }}
+				></motion.div>
+				<motion.div
 					className={cn(styles.block, styles.first)}
 					onMouseEnter={onHover}
 					onMouseLeave={() => onHover(false)}
+					initial={{ opacity: 0, y: 100 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.3 }}
 				>
 					<div className={styles.short}>
 						<div className={styles.short_title}>
@@ -28,8 +37,13 @@ const AboutMe = ({ onHover }) => {
 							Designer in <span>three startups</span>
 						</div>
 					</div>
-				</div>
-				<div className={cn(styles.block, styles.second)}>
+				</motion.div>
+				<motion.div
+					className={cn(styles.block, styles.second)}
+					initial={{ opacity: 0, y: -100 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.3 }}
+				>
 					<div className={styles.text}>
 						Here I want to tell you a bit about myself. I really{" "}
 						<span>like designing sites</span>. But what I don’t like
@@ -37,9 +51,13 @@ const AboutMe = ({ onHover }) => {
 						the site, you can be sure that{" "}
 						<span>site will contain original ideas</span>, because
 						it’s the thing I like the most. If you want your site to
-						have more views, you know <Link className={styles.link} to="/contact-me">my contact</Link>!
+						have more views, you know{" "}
+						<Link className={styles.link} to="/contact-me">
+							my contact
+						</Link>
+						!
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);

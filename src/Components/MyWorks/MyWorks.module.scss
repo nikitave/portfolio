@@ -32,6 +32,7 @@
 .block {
 	margin-top: 3rem;
 	width: 100%;
+	overflow: hidden;
 	border-radius: 30px;
 	height: 56vh;
 	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
@@ -101,7 +102,7 @@
 .right {
 	width: 65%;
 	display: flex;
-	overflow: hidden;
+	// overflow: hidden;
 	justify-content: flex-end;
 }
 
@@ -141,7 +142,7 @@
 .right_another {
 	width: 65%;
 	display: flex;
-	overflow: hidden;
+	// overflow: hidden;
 	justify-content: flex-end;
 	gap: 0.8rem;
 }
