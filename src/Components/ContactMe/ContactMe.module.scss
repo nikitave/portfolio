@@ -10,7 +10,7 @@
 	position: relative;
 	width: 30%;
 	z-index: 1;
-	font-size: 4.5rem;
+	font-size: 4.5em;
 	color: $text_color;
 	font-family: "Baskerville";
 	padding-top: 4rem;
@@ -82,7 +82,7 @@ a {
 	margin-top: 2rem;
 	color: $text_not_chosen_color;
 	margin-left: 10%;
-	font-size: 3rem;
+	font-size: 3em;
     transition: .2s linear;
 }
 
@@ -92,7 +92,7 @@ a {
 	display: block;
 	width: 80%;
 	font-family: 'Nunito';
-	font-size: 2rem;
+	font-size: 2em;
 	height: 5rem;
 	border: none;
 	cursor: pointer;
@@ -107,7 +107,7 @@ a {
 	transform: translateY(-20px);
 	opacity: 0;
 	color: $text_color;
-	font-size: 2rem;
+	font-size: 2em;
 	transition: 0.2s linear;
 }
 
@@ -115,7 +115,7 @@ a {
 	transform: translateY(-20px);
 	opacity: 0;
 	color: $bg_color;
-	font-size: 3rem;
+	font-size: 3em;
     transition: .2s linear;
 }
 
@@ -155,4 +155,11 @@ a {
         scale: 1.02;
         box-shadow: 2px 2px 5px black;
     }
+}
+
+
+@media (max-width: 1281px) {
+	.contact {
+		font-size: 12px;
+	}
 }

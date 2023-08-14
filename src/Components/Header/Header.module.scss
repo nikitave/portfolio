@@ -40,3 +40,9 @@
 .activeD {
     color: $bg_color;
 }
+
+@media (max-width: 1281px) {
+    .header {
+        font-size: 12px;
+    }
+}

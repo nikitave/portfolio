@@ -16,7 +16,7 @@
 	position: relative;
 	width: 30%;
 	z-index: 1;
-	font-size: 4.5rem;
+	font-size: 4.5em;
 	color: $text_color;
 	font-family: "Baskerville";
 	padding-top: 4rem;
@@ -68,13 +68,13 @@
 }
 
 .left_info_title {
-	font-size: 3rem;
+	font-size: 3em;
 	color: $text_color
 }
 
 .left_info_text {
 	margin-top: 1.5rem;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	line-height: 2.25rem;
 	color: $text_color;
 }
@@ -85,7 +85,7 @@
 }
 
 .left_links {
-	font-size: 2rem;
+	font-size: 2em;
 	color: $text_color;
 }
 
@@ -102,7 +102,6 @@
 .right {
 	width: 65%;
 	display: flex;
-	// overflow: hidden;
 	justify-content: flex-end;
 }
 
@@ -115,7 +114,6 @@
 }
 
 .right_column {
-	// margin-right: -3vh;
 	width: 48%;
 	display: flex;
 	margin-top: -5vh;
@@ -142,7 +140,6 @@
 .right_another {
 	width: 65%;
 	display: flex;
-	// overflow: hidden;
 	justify-content: flex-end;
 	gap: 0.8rem;
 }
@@ -152,7 +149,6 @@
 	margin-right: -5vh;
 	width: 100%;
 	display: flex;
-	// overflow: hidden;
 	justify-content: flex-end;
 	gap: 0.8rem;
 }
@@ -163,11 +159,16 @@
 	height: 130%;
 	margin-top: -10%;
 	object-fit: cover;
-	// margin-right: -20px;
 	filter: saturate(0);
 	transition: .2s linear;
 }
 
 .right_another_image:hover {
 	filter: saturate(1);
+}
+
+@media (max-width: 1281px) {
+	.works {
+		font-size: 12px;
+	}
 }
