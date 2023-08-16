@@ -240,7 +240,7 @@ const MyWorks = () => {
 								<span>make it change its theme</span> depending
 								on the user theme. Everything else was on me.
 								And I also <span>made frontend</span> for this
-								site.
+								site. It's Telegram WebApp.
 							</div>
 						</div>
 						<div>
