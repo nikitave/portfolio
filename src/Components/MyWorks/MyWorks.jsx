@@ -20,11 +20,15 @@ import jc1 from "../../images/jc1.png";
 import jc2 from "../../images/jc2.png";
 import jc3 from "../../images/jc3.png";
 import jc4 from "../../images/jc4.png";
+import p1 from "../../images/p1.png";
+import p2 from "../../images/p2.png";
+import p3 from "../../images/p3.png";
+import p4 from "../../images/p4.png";
 
 const MyWorks = () => {
 	return (
 		<div className={styles.works}>
-			<div className={styles.title}>My Works</div>
+			{/* <div className={styles.title}>My Works</div> */}
 			<div className={styles.blocks}>
 				<motion.div
 					className={cn(styles.block, styles.first)}
@@ -39,21 +43,29 @@ const MyWorks = () => {
 								Innopolis Table Tennis Club
 							</div>
 							<div className={styles.left_info_text}>
-								I am a member of Table Tennis club at my
-								university. Our club decided{" "}
-								<span>to make the life easier</span> and to made
-								site for saving results and for users to see
-								information. I <span>made UX/UI design</span>{" "}
-								for this project.
+								While I was designing the site I had such
+								requirements: all the{" "}
+								<span>fields in database</span> should{" "}
+								<span>be displayed</span> to user, and admin
+								should be able to{" "}
+								<span>do all the given actions</span>, and to
+								make <span>sign up</span> follow the given{" "}
+								<span>flow</span>.
 							</div>
 						</div>
-						<div className={styles.left_links}>
+						<div>
 							<a
+								className={styles.link}
 								target="_blank"
 								rel="noreferrer"
 								href="https://www.figma.com/file/xIRYM7BFcV15q4hXwSEfop/TableTennis?type=design&node-id=388%3A619&mode=design&t=v2IOngT9DGJHPSVy-1"
 							>
-								Figma
+								<button
+									className={styles.left_link}
+									type="button"
+								>
+									Show more
+								</button>
 							</a>
 						</div>
 					</div>
@@ -99,19 +111,26 @@ const MyWorks = () => {
 								Try this
 							</div>
 							<div className={styles.left_info_text}>
-								I worked in this startup as an{" "}
-								<span> outsource designer</span>. It is a mobile
-								app which is made for trying new clothes. I made{" "}
-								<span>UX/UI</span> designs for this project.
+								In this startup I needed to make all the pages
+								they asked me. They <span>gave me pages</span>{" "}
+								and what <span>user can do</span>. And{" "}
+								<span>employers were satisfied</span> with the
+								result.
 							</div>
 						</div>
-						<div className={styles.left_links}>
+						<div>
 							<a
+								className={styles.link}
 								target="_blank"
 								rel="noreferrer"
 								href="https://www.figma.com/file/fd251qHK8AnIhVUxTA5AxU/try-this?type=design&node-id=1%3A515&mode=design&t=bQKPI8AKxzeYX3Ar-1"
 							>
-								Figma
+								<button
+									className={styles.left_link}
+									type="button"
+								>
+									Show more
+								</button>
 							</a>
 						</div>
 					</div>
@@ -152,7 +171,7 @@ const MyWorks = () => {
 								<span>site was losing a lot of customers</span>,
 								because of the bad design, all the other sites
 								with similar functionality and more modern
-								design, they attracted more people. So, my{" "}
+								design, attracted more people. So, my{" "}
 								<span>
 									purpose was to return old customers and
 									attract new ones
@@ -161,21 +180,16 @@ const MyWorks = () => {
 								this project, and <span>succeeded</span>.
 							</div>
 						</div>
-						<div className={styles.left_links}>
+						<div>
 							<a
-								target="_blank"
-								rel="noreferrer"
-								href="https://jellycraft.net/"
-							>
-								Site
-							</a>
-							,{" "}
-							<a
+								className={styles.link}
 								target="_blank"
 								rel="noreferrer"
 								href="https://www.figma.com/file/Wux0QQ44VwgCWhLI11mLNA/something?type=design&node-id=0%3A1&mode=design&t=h0lRtwvnN1yf9EHU-1"
 							>
-								Figma
+								<button className={styles.left_link}>
+									Show more
+								</button>
 							</a>
 						</div>
 					</div>
@@ -221,20 +235,27 @@ const MyWorks = () => {
 								OneMenu
 							</div>
 							<div className={styles.left_info_text}>
-								There was an idea to unify all menus in one. I
-								<span>made UI/UX design and frontend</span>.
-								This WebApp uses users’ colors. You can check
-								how WebApp looks on different devices with{" "}
-								<span>different preset user colors</span>.
+								In this project I had two requirements:{" "}
+								<span>to make online menu</span> and to{" "}
+								<span>make it change its theme</span> depending
+								on the user theme. Everything else was on me.
+								And I also <span>made frontend</span> for this
+								site.
 							</div>
 						</div>
-						<div className={styles.left_links}>
+						<div>
 							<a
+								className={styles.link}
 								target="_blank"
 								rel="noreferrer"
 								href="https://www.figma.com/file/m78xN6GSOK6ZTT8gnUGFHx/OneMenu?type=design&node-id=63%3A11&mode=design&t=FnTlKymDxGIn8cd9-1"
 							>
-								Figma
+								<button
+									className={styles.left_link}
+									type="button"
+								>
+									Show more
+								</button>
 							</a>
 						</div>
 					</div>
@@ -271,29 +292,27 @@ const MyWorks = () => {
 								Friendly Carrier
 							</div>
 							<div className={styles.left_info_text}>
-								I worked in this startup as the{" "}
-								<span>designer </span>. I designed{" "}
-								<span>UI/UX</span> for all the pages. I was in
-								this project from the beginning. Also, I{" "}
-								<span>adapted</span> all the pages{" "}
-								<span>for mobile devices</span> in code.
+								In this startup I was given{" "}
+								<span>the main color</span> and the{" "}
+								<span>approximate flow of each page</span> and
+								necessity to{" "}
+								<span>use elements from the "Material UI"</span>
+								. It's my <span>first</span> design project.
 							</div>
 						</div>
-						<div className={styles.left_links}>
+						<div>
 							<a
-								target="_blank"
-								rel="noreferrer"
-								href="https://friendlycarrier.com/"
-							>
-								Site
-							</a>
-							,{" "}
-							<a
+								className={styles.link}
 								target="_blank"
 								rel="noreferrer"
 								href="https://www.figma.com/file/V0WaAKDHpUDIsAQQ2gtOKS/MUI-for-Figma-(Community-version)-(with-Material-UI)-(Community)?type=design&node-id=5703%3A69518&mode=design&t=4e1cQ5NOfvm48EgS-1"
 							>
-								Figma
+								<button
+									className={styles.left_link}
+									type="button"
+								>
+									Show more
+								</button>
 							</a>
 						</div>
 					</div>
@@ -320,6 +339,69 @@ const MyWorks = () => {
 								<img
 									className={styles.right_column_image}
 									src={fc4}
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+				</motion.div>
+				<motion.div
+					className={cn(styles.block, styles.second)}
+					initial={{ opacity: 0, x: -100 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+					viewport={{ once: true }}
+				>
+					<div className={styles.left}>
+						<div className={styles.left_info}>
+							<div className={styles.left_info_title}>
+								This site
+							</div>
+							<div className={styles.left_info_text}>
+								The main purpose of this site is to draw
+								attention to me and my works, so that people
+								then hire me.
+							</div>
+						</div>
+						<div>
+							<a
+								className={styles.link}
+								target="_blank"
+								rel="noreferrer"
+								href="https://www.figma.com/file/V0WaAKDHpUDIsAQQ2gtOKS/MUI-for-Figma-(Community-version)-(with-Material-UI)-(Community)?type=design&node-id=5703%3A69518&mode=design&t=4e1cQ5NOfvm48EgS-1"
+							>
+								<button
+									className={styles.left_link}
+									type="button"
+								>
+									Show more
+								</button>
+							</a>
+						</div>
+					</div>
+					<div className={styles.right}>
+						<div className={styles.right_block}>
+							<div className={styles.right_column}>
+								<img
+									className={styles.right_column_image}
+									src={p1}
+									alt=""
+								/>
+								<img
+									className={styles.right_column_image}
+									src={p4}
+									alt=""
+								/>
+							</div>
+							<div className={styles.right_column}>
+								<img
+									className={styles.right_column_image}
+									src={p3}
+									alt=""
+								/>
+								<img
+									className={styles.right_column_image}
+									src={p2}
 									alt=""
 								/>
 							</div>

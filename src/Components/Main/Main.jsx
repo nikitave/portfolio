@@ -46,8 +46,8 @@ const Main = () => {
 						</motion.button>
 					</Link>
 					<motion.div
-						initial={{ opacity: 0, y: 100 }}
-						whileInView={{ opacity: 1, y: 0 }}
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
 						transition={{ duration: 1, delay: 2 }}
                         viewport={{once: true}}
 					>

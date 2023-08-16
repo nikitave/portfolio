@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const ContactMe = ({ onHover }) => {
 	return (
 		<div className={styles.contact}>
-			<div className={styles.title}>Contact Me</div>
+			{/* <div className={styles.title}>Contact Me</div> */}
 			<div className={styles.blocks}>
 				<motion.div
 					className={styles.block}

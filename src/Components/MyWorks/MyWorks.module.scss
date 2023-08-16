@@ -26,7 +26,7 @@
 
 .blocks {
 	width: 95%;
-	margin: 40px auto 40px;
+	margin: 10vh auto 40px;
 }
 
 .block {
@@ -56,20 +56,22 @@
 	);
 }
 
-
 .left {
 	width: 35%;
-	height: 90%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding-top: 2.8vh;
-	padding-left: 2rem;
+}
+
+.left_info {
+	margin-left: 2em;
+	margin-top: 2.8em;
 }
 
 .left_info_title {
 	font-size: 3em;
-	color: $text_color
+	color: $text_color;
 }
 
 .left_info_text {
@@ -84,19 +86,26 @@
 	font-weight: 600;
 }
 
-.left_links {
-	font-size: 2em;
-	color: $text_color;
+.left_link {
+	font-size: 1.5em;
+	background-color: $main_color;
+	width: 40%;
+	height: 3.5rem;
+	border-radius: 0 20px 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s linear;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	color: $bg_color;
 }
 
-.left_links a {
-	border-bottom: 2px solid rgba($bg_color, 0.01);
-	color: $main_color;
-	transition: .2s linear;
-}
-
-.left_links a:hover {
-	border-bottom: 2px solid $main_color;
+.left_link:hover {
+	height: 4rem;
+	width: 45%;
+	font-size: 1.8em;
 }
 
 .right {
@@ -127,9 +136,8 @@
 	height: 50%;
 	object-fit: cover;
 	filter: saturate(0);
-	transition: .2s linear;
+	transition: 0.2s linear;
 }
-
 
 .right_column:hover {
 	.right_column_image {
@@ -160,7 +168,7 @@
 	margin-top: -10%;
 	object-fit: cover;
 	filter: saturate(0);
-	transition: .2s linear;
+	transition: 0.2s linear;
 }
 
 .right_another_image:hover {
