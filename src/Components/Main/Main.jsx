@@ -50,6 +50,7 @@ const Main = () => {
 						whileInView={{ opacity: 1 }}
 						transition={{ duration: 1, delay: 2 }}
                         viewport={{once: true}}
+						className={styles.check}
 					>
 						<button
 							className={styles.content_button}

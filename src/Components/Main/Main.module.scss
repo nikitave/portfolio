@@ -23,6 +23,7 @@
 }
 
 .block {
+	z-index: 6;
 	height: 120vh;
 	width: 32%;
 	transform: rotate(5deg);
@@ -133,15 +134,31 @@
 }
 
 .content_button {
+	z-index: 5;
+	position: absolute;
+	bottom: 10px;
+	left: 47.5%;
 	border: none;
 	background: none;
-	margin-top: 2rem;
 	cursor: pointer;
+	animation: jump 2s infinite linear;
+}
+
+@keyframes jump {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
 
 .show_image {
-	width: 4rem;
-	height: 4rem;
+	width: 6rem;
+	height: 6rem;
 	color: $text_not_chosen_color;
 	transition: 0.2s linear;
 }
@@ -151,8 +168,101 @@
 	scale: 1.05;
 }
 
+
+
 @media (max-width: 1281px) {
 	.main {
 		font-size: 12px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.main {
+		font-size: 10px;
+	}
+
+	.content {
+		padding-top: 35vh;
+	}
+
+	.button {
+		width: 20rem;
+		height: 3.5rem;
+	}
+
+	.content_text {
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 850px) {
+	.content {
+		width: 60%;
+		z-index: 10;
+	}
+
+	.image_block {
+		z-index: 0;
+		width: 100%;
+		margin-left: -40%;
+	}
+}
+
+@media (max-width: 700px) {
+	.main {
+		font-size: 6px;
+	}
+	.content_text {
+		white-space: wrap;
+		line-height: 2rem;
+		font-size: 4em;
+	}
+	.content_title {
+		letter-spacing: 0.5rem;
+		margin-bottom: 1.5rem;
+		font-size: 10em;
+	}
+
+	.button {
+		width: 12rem;
+		height: 3rem;
+		border-radius: 10px;
+		font-size: 3em;
+	}
+
+	.show_image {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.choice {
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.block {
+		z-index: 11;
+		width: 120%;
+		margin-left: -10%;
+		transform: rotate(5deg);
+		height: 33%;
+		margin-top: 0;
+	}
+
+	.title {
+		margin-top: 5vh;
+		font-size: 4em;
+		padding-left: 10%;
+	}
+
+	.text {
+		font-size: 3em;
+		width: 60%;
+		padding-left: 10%;
+		margin-top: 0.5rem;
+	}
+
+	.image_block {
+		margin-left: -150%;
 	}
 }
