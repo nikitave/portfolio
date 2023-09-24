@@ -1,12 +1,12 @@
-@import '../../variables';
+@import "../../variables";
 
 .main {
-    height: 100vh;
+	height: 100vh;
 	width: 100%;
 	overflow-x: hidden;
-    overflow-y: scroll;
+	overflow-y: scroll;
 	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */	
+	scrollbar-width: none; /* Firefox */
 	font-size: 16px;
 }
 
@@ -15,116 +15,121 @@
 }
 
 .choice {
-    height: 100vh;
-    display: flex;
-    width: 100%;
-    gap: 1rem;
-    overflow: hidden;
+	height: 100vh;
+	display: flex;
+	width: 100%;
+	gap: 1rem;
+	overflow: hidden;
 }
 
 .block {
-    height: 120vh;
-    width: 32%;
-    transform: rotate(5deg);
-    background-color: $secondary_bg_color;
-    display: flex;
-    flex-direction: column;
-    margin-top: -10vh;
-    transition: .2s linear;
-    padding-left: 1rem;
+	height: 120vh;
+	width: 32%;
+	transform: rotate(5deg);
+	background-color: $secondary_bg_color;
+	display: flex;
+	flex-direction: column;
+	margin-top: -10vh;
+	transition: 0.2s linear;
+	padding-left: 1rem;
 }
 
 .title {
-    margin-top: 30vh;
-    font-size: 3em;
-    color: $text_color;
-    transition: .2s linear;
-    font-weight: 600;
-	transition: .2s linear;
+	margin-top: 30vh;
+	font-size: 3em;
+	color: $text_color;
+	transition: 0.2s linear;
+	font-weight: 600;
+	transition: 0.2s linear;
 }
 
 .text {
-    margin-top: 1.5rem;
-    color: $text_color;
-    font-size: 2em;
-    width: 90%;
-	transition: .2s linear;
+	margin-top: 1.5rem;
+	color: $text_color;
+	font-size: 2em;
+	width: 90%;
+	transition: 0.2s linear;
 }
 
 .text span {
-    color: $main_color;
-	transition: .2s linear;
+	color: $main_color;
+	transition: 0.2s linear;
 }
 
 .block:hover {
-    background-color: $main_color;
+	background-color: $main_color;
 
-    .title {
-        color: $bg_color;
-    }
+	.title {
+		color: $bg_color;
+	}
 
-    .text {
-        color: $secondary_bg_color;
-    }
+	.text {
+		color: $secondary_bg_color;
+	}
 
-    .text span {
-        color: $bg_color;
-    }
+	.text span {
+		color: $bg_color;
+	}
 }
 
 .banner {
-    height: 100vh;
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
+	height: 100vh;
+	width: 100%;
+	justify-content: space-between;
+	display: flex;
 }
 
 .content {
-    padding-top: 40vh;
-    padding-left: 2.5%;
+	padding-top: 40vh;
+	padding-left: 2.5%;
 }
 
 .content_text {
-    font-size: 3.125em;
-    color: $text_color;
+	font-size: 3.125em;
+	color: $text_color;
 }
 
 .content_title {
-    color: $main_color;
-    font-family: "Baskerville";
-    margin-bottom: 2rem;
-    font-size: 8em;
-    letter-spacing: 1rem;
+	color: $main_color;
+	font-family: "Baskerville";
+	margin-bottom: 2rem;
+	font-size: 8em;
+	letter-spacing: 1rem;
 }
 
 .button {
-    width: 30rem;
-    font-size: 2em;
-    height: 5rem;
-    outline: none;
-    border: none;
-    background-color: $main_color;
-    color: $bg_color;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: .2s linear;
-    font-family: "Nunito";
+	width: 30rem;
+	font-size: 2em;
+	height: 5rem;
+	outline: none;
+	border: none;
+	background-color: $main_color;
+	color: $bg_color;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.2s linear;
+	font-family: "Nunito";
 }
 
 .button:hover {
-    scale: 1.02;
-    box-shadow: 2px 2px 5px black;
+	scale: 1.02;
+	box-shadow: 2px 2px 5px black;
+}
+
+.button:focus {
+	scale: 1;
+	box-shadow: none;
 }
 
 .image_block {
-    height: 100vh;
-    overflow: hidden;
+	height: 100vh;
+	overflow: hidden;
 	cursor: pointer;
 }
 
 .image {
-    height: 100%;
-    z-index: 1;
+	height: 100%;
+	z-index: 1;
 }
 
 .content_button {
@@ -138,7 +143,7 @@
 	width: 4rem;
 	height: 4rem;
 	color: $text_not_chosen_color;
-	transition: .2s linear;
+	transition: 0.2s linear;
 }
 
 .show_image:hover {
