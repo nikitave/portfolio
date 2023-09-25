@@ -189,15 +189,11 @@
 		width: 20rem;
 		height: 3.5rem;
 	}
-
-	.content_text {
-		white-space: nowrap;
-	}
 }
 
 @media (max-width: 850px) {
 	.content {
-		width: 60%;
+		width: 70%;
 		z-index: 10;
 	}
 
@@ -205,6 +201,10 @@
 		z-index: 0;
 		width: 100%;
 		margin-left: -40%;
+	}
+
+	.content_text {
+		white-space: wrap;
 	}
 }
 
