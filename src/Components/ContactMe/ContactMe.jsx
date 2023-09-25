@@ -24,6 +24,7 @@ const ContactMe = ({ onHover }) => {
 							target="_blank"
 							rel="noopener noreferrer"
 							href="mailto:nbogdankov@gmail.com"
+							className={styles.link}
 						>
 							<button className={styles.button} type="button">
 								Contact by email
@@ -49,6 +50,7 @@ const ContactMe = ({ onHover }) => {
 							target="_blank"
 							rel="noopener noreferrer"
 							href="https://t.me/nikibog"
+							className={styles.link}
 						>
 							<button className={styles.button} type="button">
 								Contact by telegram
