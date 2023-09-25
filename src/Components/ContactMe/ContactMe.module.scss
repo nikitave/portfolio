@@ -60,7 +60,7 @@ a {
 .content {
 	margin-left: 10%;
 	width: 70%;
-	height: 25rem;
+	// height: 25rem;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -161,6 +161,54 @@ a {
 
 @media (max-width: 1281px) {
 	.contact {
-		font-size: 12px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 850px) {
+	.blocks {
+		flex-direction: column;
+	}
+
+	.block {
+		height: 45vh;
+		margin-left: -10vh;
+		padding-left: 8vh;
+		width: 120vh;
+		margin-top: 0;
+	}
+
+	.content {
+		background-position: left;
+	}
+
+	.button {
+		width: 25rem;
+	}
+}
+
+@media (max-width: 650px) {
+
+	.contact {
+		font-size: 9px;
+	}
+
+	.block {
+		padding-left: 0vh;
+	}
+
+	.another {
+		padding-left: 6vh;
+	}
+
+	.text {
+		width: 40%;
+	}
+
+	.button {
+		width: 15rem;
+		height: 3rem;
+		border-radius: 15px;
+		margin-top: 1.5rem;
 	}
 }

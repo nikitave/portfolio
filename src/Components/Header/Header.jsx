@@ -8,6 +8,8 @@ import close from "../../images/close.svg";
 const Header = ({ color, colorTwo }) => {
     const location = useLocation();
 
+    const isSmall = window.innerWidth < 850;
+
     const [isToggled, setIsToggled] = useState(false);
 
     const toggle = () => {
@@ -37,7 +39,7 @@ const Header = ({ color, colorTwo }) => {
                 <Link
                     className={cn(styles.link, {
                         [styles.active]: location.pathname === "/contact-me",
-                        [styles.activeD]: color,
+                        [styles.activeD]: color && !isSmall,
                     })}
                     to="/contact-me"
                 >
