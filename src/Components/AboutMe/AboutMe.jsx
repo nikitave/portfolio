@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 const AboutMe = ({ onHover }) => {
 	return (
 		<div className={styles.about}>
-			{/* <div className={styles.title}>About Me</div> */}
 			<div className={styles.blocks}>
 				<motion.div
 					className={styles.back_img}
