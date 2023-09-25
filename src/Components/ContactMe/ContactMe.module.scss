@@ -255,6 +255,8 @@ a {
 	}
 
 	.button {
+		background-color: $main_color;
+		color: $bg_color;
 		transform: translateY(0px);
 		opacity: 1;
 	}
