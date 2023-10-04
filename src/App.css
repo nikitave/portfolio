@@ -9,10 +9,3 @@ body {
   font-family: "Nunito";
   font-weight: 500;
 }
-
-
-@media (max-width: 600px) {
-  body {
-    height: auto;
-  }
-}
