@@ -266,6 +266,11 @@
 
 @media (max-width: 700px) {
 
+	.blocks {
+		padding-bottom: 10vh;
+		margin-bottom: 0;
+	}
+
 	.works {
 		font-size: 9px;
 	}
@@ -273,6 +278,7 @@
 	.block {
 		flex-direction: column;
 		height: auto;
+		margin-top: 2rem;
 	}
 
 	.left {
