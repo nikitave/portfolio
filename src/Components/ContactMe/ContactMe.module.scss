@@ -193,6 +193,14 @@ a {
 
 @media (max-width: 650px) {
 
+	.blocks {
+		padding-top: 5vh;
+	}
+
+	.block {
+		height: 40vh;
+	}
+
 	.contact {
 		font-size: 9px;
 	}
