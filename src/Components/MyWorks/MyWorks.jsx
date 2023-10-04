@@ -24,11 +24,11 @@ import p1 from "../../images/p1.png";
 import p2 from "../../images/p2.png";
 import p3 from "../../images/p3.png";
 import p4 from "../../images/p4.png";
+import arrow from '../../images/arrow.svg'
 
 const MyWorks = () => {
 	return (
 		<div className={styles.works}>
-			{/* <div className={styles.title}>My Works</div> */}
 			<div className={styles.blocks}>
 				<motion.div
 					className={cn(styles.block, styles.first)}
@@ -65,6 +65,7 @@ const MyWorks = () => {
 									type="button"
 								>
 									Show more
+									<img className={styles.left_link_image} src={arrow} alt="" />
 								</button>
 							</a>
 						</div>
@@ -130,6 +131,7 @@ const MyWorks = () => {
 									type="button"
 								>
 									Show more
+									<img className={styles.left_link_image} src={arrow} alt="" />
 								</button>
 							</a>
 						</div>
@@ -189,6 +191,7 @@ const MyWorks = () => {
 							>
 								<button className={styles.left_link}>
 									Show more
+									<img className={styles.left_link_image} src={arrow} alt="" />
 								</button>
 							</a>
 						</div>
@@ -255,6 +258,7 @@ const MyWorks = () => {
 									type="button"
 								>
 									Show more
+									<img className={styles.left_link_image} src={arrow} alt="" />
 								</button>
 							</a>
 						</div>
@@ -305,13 +309,14 @@ const MyWorks = () => {
 								className={styles.link}
 								target="_blank"
 								rel="noreferrer"
-								href="https://www.figma.com/file/V0WaAKDHpUDIsAQQ2gtOKS/MUI-for-Figma-(Community-version)-(with-Material-UI)-(Community)?type=design&node-id=5703%3A69518&mode=design&t=4e1cQ5NOfvm48EgS-1"
+								href="https://www.figma.com/file/nt6OCcBJPseeJ8CJ6Pus3P/Friendly-Carrier?type=design&node-id=0%3A1&mode=design&t=xPCm7UId7MWfqnhT-1"
 							>
 								<button
 									className={styles.left_link}
 									type="button"
 								>
 									Show more
+									<img className={styles.left_link_image} src={arrow} alt="" />
 								</button>
 							</a>
 						</div>
@@ -375,6 +380,7 @@ const MyWorks = () => {
 									type="button"
 								>
 									Show more
+									<img className={styles.left_link_image} src={arrow} alt="" />
 								</button>
 							</a>
 						</div>
