@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7c7decc6.css",
-    "main.js": "/portfolio/static/js/main.ed77f705.js",
+    "main.js": "/portfolio/static/js/main.47081800.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/backgroundImage.png": "/portfolio/static/media/backgroundImage.00960000ec3ff9418e1f.png",
     "static/media/tt2.png": "/portfolio/static/media/tt2.1a5c610af2a8a12566ea.png",
     "static/media/jc3.png": "/portfolio/static/media/jc3.e3384aa44b6beb498aed.png",
+    "static/media/wp4.png": "/portfolio/static/media/wp4.b80684be0bfd1b6b4791.png",
     "static/media/me.png": "/portfolio/static/media/me.04bb8846e69c073e99fd.png",
     "static/media/p4.png": "/portfolio/static/media/p4.a932cc20b16bdf4a743c.png",
     "static/media/ittc1.png": "/portfolio/static/media/ittc1.aeda248f867069efc872.png",
@@ -20,11 +21,22 @@
     "static/media/p3.png": "/portfolio/static/media/p3.a7b0b9f5cb31e07151aa.png",
     "static/media/ittc4.png": "/portfolio/static/media/ittc4.825bebece60058f44072.png",
     "static/media/ittc2.png": "/portfolio/static/media/ittc2.794003ddf5dc0680bd92.png",
+    "static/media/ib4.png": "/portfolio/static/media/ib4.68e8815b8eaa309ab69d.png",
+    "static/media/ib3.png": "/portfolio/static/media/ib3.705bd04a336bde287a13.png",
+    "static/media/ss1.png": "/portfolio/static/media/ss1.37b79a540104fb225036.png",
     "static/media/jc2.png": "/portfolio/static/media/jc2.3348ae36ff6585a24885.png",
     "static/media/jc1.png": "/portfolio/static/media/jc1.7961a17d47fb35c2f95e.png",
+    "static/media/wp1.png": "/portfolio/static/media/wp1.412f4ce9bd3de9502dfa.png",
+    "static/media/wp3.png": "/portfolio/static/media/wp3.2fd0616eec595c2f2168.png",
     "static/media/jc4.png": "/portfolio/static/media/jc4.67f64d5afef9b5141219.png",
+    "static/media/ib1.png": "/portfolio/static/media/ib1.56ae6a3fe67793c8d34f.png",
+    "static/media/wp2.png": "/portfolio/static/media/wp2.701b4d28cb9b77f017ee.png",
+    "static/media/ib2.png": "/portfolio/static/media/ib2.41b4a7e493d7b3b4a161.png",
     "static/media/Nunito-Regular.ttf": "/portfolio/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
     "static/media/Nunito-SemiBold.ttf": "/portfolio/static/media/Nunito-SemiBold.77c1e330694154d3efed.ttf",
+    "static/media/ss2.png": "/portfolio/static/media/ss2.950fcf48a08d072e81a7.png",
+    "static/media/ss3.png": "/portfolio/static/media/ss3.da73a2e8f9785ceb39a0.png",
+    "static/media/ss4.png": "/portfolio/static/media/ss4.dccba3148f5e0eab9b89.png",
     "static/media/tt1.png": "/portfolio/static/media/tt1.487dd5dbb86094cb54f4.png",
     "static/media/Baskervville-Regular.ttf": "/portfolio/static/media/Baskervville-Regular.f901739d83410218a9d2.ttf",
     "static/media/tt3.png": "/portfolio/static/media/tt3.c87dd220e588e161762f.png",
@@ -41,11 +53,11 @@
     "static/media/arrow.svg": "/portfolio/static/media/arrow.ac31e7db4d97f2e9aebae6e059342594.svg",
     "static/media/menu.svg": "/portfolio/static/media/menu.63c536e27671485d1666233636906d44.svg",
     "main.7c7decc6.css.map": "/portfolio/static/css/main.7c7decc6.css.map",
-    "main.ed77f705.js.map": "/portfolio/static/js/main.ed77f705.js.map",
+    "main.47081800.js.map": "/portfolio/static/js/main.47081800.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c7decc6.css",
-    "static/js/main.ed77f705.js"
+    "static/js/main.47081800.js"
   ]
 }
