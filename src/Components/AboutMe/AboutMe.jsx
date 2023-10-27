@@ -47,8 +47,8 @@ const AboutMe = ({ onHover }) => {
                         Here is some information about me. I{" "}
                         <span>like designing sites</span>. I do{" "}
                         <span>both UI/UX </span> parts of the design. I have
-                        already <span>completed seven</span> projects. If you
-                        need the design to be <span>made fast</span>, I can
+                        already <span>completed nine</span> projects. If you
+                        need the design to be <span>made quickly</span>, I can
                         satisfy this requirement. So, if you want your site to
                         have good UI/UX you know {" "}
                         <Link className={styles.link} to="/contact-me">

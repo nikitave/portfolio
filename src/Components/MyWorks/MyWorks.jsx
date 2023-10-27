@@ -24,7 +24,20 @@ import p1 from "../../images/p1.png";
 import p2 from "../../images/p2.png";
 import p3 from "../../images/p3.png";
 import p4 from "../../images/p4.png";
+import ib1 from '../../images/ib1.png';
+import ib2 from '../../images/ib2.png';
+import ib3 from '../../images/ib3.png';
+import ib4 from '../../images/ib4.png';
+import ss1 from "../../images/ss1.png";
+import ss2 from "../../images/ss2.png";
+import ss3 from "../../images/ss3.png";
+import ss4 from "../../images/ss4.png";
+import wp1 from '../../images/wp1.png';
+import wp2 from '../../images/wp2.png';
+import wp3 from '../../images/wp3.png';
+import wp4 from '../../images/wp4.png';
 import arrow from "../../images/arrow.svg";
+
 
 const MyWorks = () => {
     return (
@@ -299,6 +312,211 @@ const MyWorks = () => {
                                 src={om3}
                                 alt=""
                             />
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    className={cn(styles.block, styles.first)}
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <div className={styles.left}>
+                        <div className={styles.left_info}>
+                            <div className={styles.left_info_title}>
+                                InnoBooking
+                            </div>
+                            <div className={styles.left_info_text}>
+                                It's the site for university. The <span>previous</span> 
+                                site for booking rooms <span>was not convenient</span> to 
+                                use. My purpose was to make it easy to use. And I <span>succeed</span> in this task. 
+                            </div>
+                        </div>
+                        <div>
+                            <a
+                                className={styles.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.figma.com/file/xIRYM7BFcV15q4hXwSEfop/TableTennis?type=design&node-id=388%3A619&mode=design&t=v2IOngT9DGJHPSVy-1"
+                            >
+                                <button
+                                    className={styles.left_link}
+                                    type="button"
+                                >
+                                    Show more
+                                    <img
+                                        className={styles.left_link_image}
+                                        src={arrow}
+                                        alt=""
+                                    />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.right}>
+                        <div className={styles.right_block}>
+                            <div className={styles.right_column}>
+                                <img
+                                    className={styles.right_column_image}
+                                    src={ib1}
+                                    alt=""
+                                />
+                                <img
+                                    className={styles.right_column_image}
+                                    src={ib2}
+                                    alt=""
+                                />
+                            </div>
+                            <div className={styles.right_column}>
+                                <img
+                                    className={styles.right_column_image}
+                                    src={ib3}
+                                    alt=""
+                                />
+                                <img
+                                    className={styles.right_column_image}
+                                    src={ib4}
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    className={cn(styles.block, styles.first)}
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <div className={styles.left}>
+                        <div className={styles.left_info}>
+                            <div className={styles.left_info_title}>
+                                Score Scout
+                            </div>
+                            <div className={styles.left_info_text}>
+                                It's the university project, where I worked as a designer. 
+                                It's the app for creating tournaments for sports. 
+                                I needed to make it <span>really simple</span>. But it should contain all the 
+                                necessary features. 
+                            </div>
+                        </div>
+                        <div>
+                            <a
+                                className={styles.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.figma.com/file/499BGrIYN7O3YClxj9nLc3/ScoreScout?type=design&node-id=38%3A843&mode=design&t=evhICo0NZJJAwqSG-1"
+                            >
+                                <button
+                                    className={styles.left_link}
+                                    type="button"
+                                >
+                                    Show more
+                                    <img
+                                        className={styles.left_link_image}
+                                        src={arrow}
+                                        alt=""
+                                    />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.right}>
+                        <div className={styles.right_block}>
+                            <div className={styles.right_column}>
+                                <img
+                                    className={styles.right_column_image}
+                                    src={ss1}
+                                    alt=""
+                                />
+                                <img
+                                    className={styles.right_column_image}
+                                    src={ss2}
+                                    alt=""
+                                />
+                            </div>
+                            <div className={styles.right_column}>
+                                <img
+                                    className={styles.right_column_image}
+                                    src={ss3}
+                                    alt=""
+                                />
+                                <img
+                                    className={styles.right_column_image}
+                                    src={ss4}
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    className={cn(styles.block, styles.first)}
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <div className={styles.left}>
+                        <div className={styles.left_info}>
+                            <div className={styles.left_info_title}>
+                                Write Project
+                            </div>
+                            <div className={styles.left_info_text}>
+                                It's a <span>hobby</span> project. It's not yet realized.
+                                The purpose of this site is to unite writers, so that people 
+                                can evaluate others work and write their own.
+                            </div>
+                        </div>
+                        <div>
+                            <a
+                                className={styles.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.figma.com/file/499BGrIYN7O3YClxj9nLc3/ScoreScout?type=design&node-id=38%3A843&mode=design&t=evhICo0NZJJAwqSG-1"
+                            >
+                                <button
+                                    className={styles.left_link}
+                                    type="button"
+                                >
+                                    Show more
+                                    <img
+                                        className={styles.left_link_image}
+                                        src={arrow}
+                                        alt=""
+                                    />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.right}>
+                        <div className={styles.right_block}>
+                            <div className={styles.right_column}>
+                                <img
+                                    className={styles.right_column_image}
+                                    src={wp1}
+                                    alt=""
+                                />
+                                <img
+                                    className={styles.right_column_image}
+                                    src={wp2}
+                                    alt=""
+                                />
+                            </div>
+                            <div className={styles.right_column}>
+                                <img
+                                    className={styles.right_column_image}
+                                    src={wp3}
+                                    alt=""
+                                />
+                                <img
+                                    className={styles.right_column_image}
+                                    src={wp4}
+                                    alt=""
+                                />
+                            </div>
                         </div>
                     </div>
                 </motion.div>
