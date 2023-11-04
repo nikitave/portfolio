@@ -546,13 +546,13 @@ const MyWorks = () => {
                                 className={styles.link}
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.figma.com/file/nt6OCcBJPseeJ8CJ6Pus3P/Friendly-Carrier?type=design&node-id=0%3A1&mode=design&t=xPCm7UId7MWfqnhT-1"
+                                href="https://friendlycarrier.com/"
                             >
                                 <button
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    Show more
+                                    Site
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
