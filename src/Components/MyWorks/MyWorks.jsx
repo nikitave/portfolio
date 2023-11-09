@@ -119,8 +119,8 @@ const MyWorks = () => {
                                 Inno Table Tennis Club
                             </div>
                             <div className={styles.left_info_text}>
-                                It's the site for sport club in University. And
-                                my task was to satisfy the following
+                                It's the site for sport club in the University. 
+                                My task was to satisfy the following
                                 requirements: <span>all the fields</span> in the
                                 database should <span>be displayed</span>, all
                                 the <span>action</span> should be possible to{" "}
@@ -268,7 +268,7 @@ const MyWorks = () => {
                                 this project and a designer. I needed to
                                 implement design with{" "}
                                 <span>all the features included</span>.{" "}
-                                <span>User flow again on me</span>. One of the
+                                <span>User flow was on me</span>. One of the
                                 main features is the{" "}
                                 <span>changing the theme</span> depending on the
                                 telegram theme (because it's Telegram WebApp).
@@ -328,7 +328,7 @@ const MyWorks = () => {
                                 InnoBooking
                             </div>
                             <div className={styles.left_info_text}>
-                                It's the site for university. The <span>previous</span> 
+                                It's the site for university. The <span>previous</span> {" "}
                                 site for booking rooms <span>was not convenient</span> to 
                                 use. My purpose was to make it easy to use. And I <span>succeed</span> in this task. 
                             </div>
@@ -398,8 +398,9 @@ const MyWorks = () => {
                             <div className={styles.left_info_text}>
                                 It's the university project, where I worked as a designer. 
                                 It's the app for creating tournaments for sports. 
-                                I needed to make it <span>really simple</span>. But it should contain all the 
-                                necessary features. 
+                                I needed to make it <span>simple</span>. 
+                                But it should contain <span>all the necessary functions</span> all the 
+                                necessary features. I succeeded.
                             </div>
                         </div>
                         <div>
@@ -467,7 +468,7 @@ const MyWorks = () => {
                             <div className={styles.left_info_text}>
                                 It's a <span>hobby</span> project. It's not yet realized.
                                 The purpose of this site is to unite writers, so that people 
-                                can evaluate others work and write their own.
+                                can evaluate others work and write their own. 
                             </div>
                         </div>
                         <div>
