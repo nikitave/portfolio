@@ -2,8 +2,12 @@ import React from "react";
 import styles from "./ContactMe.module.scss";
 import cn from "classnames";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const ContactMe = ({ onHover }) => {
+
+	const { t } = useTranslation()
+
 	return (
 		<div className={styles.contact}>
 			<div className={styles.blocks}>
@@ -15,7 +19,7 @@ const ContactMe = ({ onHover }) => {
 				>
 					<div className={cn(styles.content, styles.first)}>
 						<div className={styles.text}>
-							You can contact me at this email address:
+							{t('email_me')}
 						</div>
 						<div className={styles.important_text}>
 							nbogdankov@gmail.com
@@ -43,7 +47,8 @@ const ContactMe = ({ onHover }) => {
 				>
 					<div className={cn(styles.content, styles.second)}>
 						<div className={styles.text}>
-							You can contact me in telegram with this nickname:
+							{t('telegram_me')}
+							
 						</div>
 						<div className={styles.important_text}>@nikibog</div>
 						<a

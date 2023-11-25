@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useTransition } from "react";
 import styles from "./MyWorks.module.scss";
 import cn from "classnames";
 import { motion } from "framer-motion";
@@ -24,22 +24,24 @@ import p1 from "../../images/p1.png";
 import p2 from "../../images/p2.png";
 import p3 from "../../images/p3.png";
 import p4 from "../../images/p4.png";
-import ib1 from '../../images/ib1.png';
-import ib2 from '../../images/ib2.png';
-import ib3 from '../../images/ib3.png';
-import ib4 from '../../images/ib4.png';
+import ib1 from "../../images/ib1.png";
+import ib2 from "../../images/ib2.png";
+import ib3 from "../../images/ib3.png";
+import ib4 from "../../images/ib4.png";
 import ss1 from "../../images/ss1.png";
 import ss2 from "../../images/ss2.png";
 import ss3 from "../../images/ss3.png";
 import ss4 from "../../images/ss4.png";
-import wp1 from '../../images/wp1.png';
-import wp2 from '../../images/wp2.png';
-import wp3 from '../../images/wp3.png';
-import wp4 from '../../images/wp4.png';
+import wp1 from "../../images/wp1.png";
+import wp2 from "../../images/wp2.png";
+import wp3 from "../../images/wp3.png";
+import wp4 from "../../images/wp4.png";
 import arrow from "../../images/arrow.svg";
-
+import { useTranslation } from "react-i18next";
 
 const MyWorks = () => {
+    const { t } = useTranslation();
+
     return (
         <div className={styles.works}>
             <div className={styles.blocks}>
@@ -56,13 +58,8 @@ const MyWorks = () => {
                                 Try this
                             </div>
                             <div className={styles.left_info_text}>
-                                I was an outsource designer in this startup.
-                                They gave me the{" "}
-                                <span> list of required features</span> and I
-                                needed to create design with all those features
-                                included. <span>User flow</span> was also on me.{" "}
-                                <span>Employers were satisfied</span> with the
-                                result.
+                                {t("tt1")} <span>{t("tt2")}</span>, {t('tt3')}
+                                <span>{t('tt4')}</span>.
                             </div>
                         </div>
                         <div>
@@ -76,7 +73,7 @@ const MyWorks = () => {
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    Show more
+                                    {t('show')}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -119,15 +116,7 @@ const MyWorks = () => {
                                 Inno Table Tennis Club
                             </div>
                             <div className={styles.left_info_text}>
-                                It's the site for sport club in the University. 
-                                My task was to satisfy the following
-                                requirements: <span>all the fields</span> in the
-                                database should <span>be displayed</span>, all
-                                the <span>action</span> should be possible to{" "}
-                                <span>be made</span>. The{" "}
-                                <span>user flow was my responsibility</span>. I
-                                was one of the <span>leaders</span> of the
-                                project.
+                                {t('itt1')} <span>{t('itt2')}</span> {t('itt3')} 
                             </div>
                         </div>
                         <div>
@@ -141,7 +130,7 @@ const MyWorks = () => {
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    Show more
+                                    {t('show')}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -193,15 +182,8 @@ const MyWorks = () => {
                                 JellyCraft
                             </div>
                             <div className={styles.left_info_text}>
-                                This <span>project was losing users</span>,
-                                because of the bad design. Other sites with more
-                                beautiful design attracted more people. My{" "}
-                                <span>
-                                    purpose was to return old users and attract
-                                    new ones
-                                </span>{" "}
-                                . I made new <span>UI/UX design</span> for this
-                                project, and <span>succeeded</span>.
+
+                                <span>{t('jc1')}</span>{t('jc2')} <span>{t('jc3')}</span> {t('jc4')}
                             </div>
                         </div>
                         <div>
@@ -209,10 +191,10 @@ const MyWorks = () => {
                                 className={styles.link}
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.figma.com/file/Wux0QQ44VwgCWhLI11mLNA/something?type=design&node-id=0%3A1&mode=design&t=h0lRtwvnN1yf9EHU-1"
+                                href="https://jellycraft.net/"
                             >
                                 <button className={styles.left_link}>
-                                    Show more
+                                    {t('visit')}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -264,14 +246,7 @@ const MyWorks = () => {
                                 OneMenu
                             </div>
                             <div className={styles.left_info_text}>
-                                It's the university project. I was a leader in
-                                this project and a designer. I needed to
-                                implement design with{" "}
-                                <span>all the features included</span>.{" "}
-                                <span>User flow was on me</span>. One of the
-                                main features is the{" "}
-                                <span>changing the theme</span> depending on the
-                                telegram theme (because it's Telegram WebApp).
+                                {t('om1')} <span>{t('om2')}</span>{t('om3')} 
                             </div>
                         </div>
                         <div>
@@ -285,7 +260,7 @@ const MyWorks = () => {
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    Show more
+                                    {t('show')}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -328,9 +303,7 @@ const MyWorks = () => {
                                 InnoBooking
                             </div>
                             <div className={styles.left_info_text}>
-                                It's the site for university. The <span>previous</span> {" "}
-                                site for booking rooms <span>was not convenient</span> to 
-                                use. My purpose was to make it easy to use. And I <span>succeed</span> in this task. 
+                                {t('ib1')}<span>{t('ib2')}</span>{t('ib3')}
                             </div>
                         </div>
                         <div>
@@ -344,7 +317,7 @@ const MyWorks = () => {
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    Show more
+                                    {t('show')}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -396,11 +369,7 @@ const MyWorks = () => {
                                 Score Scout
                             </div>
                             <div className={styles.left_info_text}>
-                                It's the university project, where I worked as a designer. 
-                                It's the app for creating tournaments for sports. 
-                                I needed to make it <span>simple</span>. 
-                                But it should contain <span>all the necessary functions</span> all the 
-                                necessary features. I succeeded.
+                                {t('ss1')}<span>{t('ss2')}</span>{t('ss3')}
                             </div>
                         </div>
                         <div>
@@ -414,7 +383,7 @@ const MyWorks = () => {
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    Show more
+                                    {t('show')}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -463,12 +432,10 @@ const MyWorks = () => {
                     <div className={styles.left}>
                         <div className={styles.left_info}>
                             <div className={styles.left_info_title}>
-                                Write Project
+                                Writer Project
                             </div>
                             <div className={styles.left_info_text}>
-                                It's a <span>hobby</span> project. It's not yet realized.
-                                The purpose of this site is to unite writers, so that people 
-                                can evaluate others work and write their own. 
+                                {t('wp1')}<span>{t('wp2')}</span>{t('wp3')}<span>{t('wp4')}</span>{t('wp5')}
                             </div>
                         </div>
                         <div>
@@ -482,7 +449,7 @@ const MyWorks = () => {
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    Show more
+                                    {t('show')}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -534,12 +501,7 @@ const MyWorks = () => {
                                 Friendly Carrier
                             </div>
                             <div className={styles.left_info_text}>
-                                I am one of the <span>founders</span> of this
-                                startup and the designer. I had{" "}
-                                <span>a main color</span> and an{" "}
-                                <span>approximate flow of each page</span> flow
-                                of each page. It was my <span>first</span> large
-                                design project.
+                                {t('fc1')}<span>{t('fc2')}</span>{t('fc3')}<span>{t('fc4')}</span>{t('fc5')} 
                             </div>
                         </div>
                         <div>
@@ -605,9 +567,7 @@ const MyWorks = () => {
                                 This site
                             </div>
                             <div className={styles.left_info_text}>
-                                This site is my portfolio. The main purpose of
-                                this project is to <span>draw attention</span> to me and my
-                                works.
+                                {t('p1')}<span>{t('p2')}</span>{t('p3')}
                             </div>
                         </div>
                         <div>
@@ -621,7 +581,7 @@ const MyWorks = () => {
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    Show more
+                                    {t('show')}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}

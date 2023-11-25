@@ -4,7 +4,7 @@
     position: absolute;
     top: 1rem;
     left: 0;
-    width: 95%;
+    width: 97.5%;
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@
 .links {
     font-size: 2em;
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .link {
@@ -48,6 +48,21 @@
     display: none;
 }
 
+.header_button {
+    background: none;
+    outline: none;
+    border: 2px solid $text_color;
+    border-radius: 12px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 4em;
+    font-size: 1.2rem;
+    color: $text_color;
+    margin-left: 3rem;
+    font-family: 'Nunito';
+}
+
 @media (max-width: 1281px) {
     .header {
         font-size: 12px;
@@ -57,7 +72,15 @@
 @media (max-width: 800px) {
     .header {
         font-size: 9px;
-        width: 100%;
+        width: 95%;
+        margin-left: 2.5%;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .header_button {
+        margin-left: 0;
+        font-size: 1.8em;
     }
 
     .links {

@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import cn from "classnames";
 import menu from "../../images/menu.svg";
 import close from "../../images/close.svg";
+import { useTranslation } from 'react-i18next';
 
 const Header = ({ color, colorTwo }) => {
     const location = useLocation();
@@ -16,10 +17,20 @@ const Header = ({ color, colorTwo }) => {
         setIsToggled(!isToggled);
     };
 
+    const [language, setLanguage] = useState(false)
+
+    const { i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        setLanguage(!language)
+    };
+
+  
     return (
         <div className={styles.header}>
             <div className={styles.links}>
-                <Link
+                {/* <Link
                     className={cn(styles.link, {
                         [styles.active]: location.pathname === "/about-me",
                         [styles.activeD]: colorTwo,
@@ -27,7 +38,7 @@ const Header = ({ color, colorTwo }) => {
                     to="/about-me"
                 >
                     About Me
-                </Link>
+                </Link> */}
                 <Link
                     className={cn(styles.link, {
                         [styles.active]: location.pathname === "/my-works",
@@ -46,6 +57,16 @@ const Header = ({ color, colorTwo }) => {
                     Contact Me
                 </Link>
             </div>
+            {language === true && (
+                <button onClick={() => changeLanguage('en')} className={styles.header_button}>
+                    EN
+                </button>
+            )}
+            {language === false && (
+                <button onClick={() => changeLanguage('ru')} className={styles.header_button}>
+                    RU
+                </button>
+            )}
             <div
                 className={cn(
                     styles.links_mobile,
@@ -63,7 +84,7 @@ const Header = ({ color, colorTwo }) => {
                     <img className={styles.menu_image} src={close} alt="" />
                 </button>
                 <div className={styles.link_flex}>
-                    <Link
+                    {/* <Link
                         className={cn(styles.mobile_link, {
                             [styles.mobile_link_active]:
                                 location.pathname === "/about-me",
@@ -71,7 +92,7 @@ const Header = ({ color, colorTwo }) => {
                         to="/about-me"
                     >
                         About Me
-                    </Link>
+                    </Link> */}
                     <Link
                         className={cn(styles.mobile_link, {
                             [styles.mobile_link_active]:
