@@ -4,7 +4,6 @@ import styles from "./Main.module.scss";
 import { motion } from "framer-motion";
 import me from "../../images/backgroundImage.png";
 import { useTranslation } from "react-i18next";
-// import show from "../../images/show.svg";
 
 const Main = () => {
         const ref = useRef(null);

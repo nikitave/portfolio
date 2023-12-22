@@ -36,6 +36,10 @@ import wp1 from "../../images/wp1.png";
 import wp2 from "../../images/wp2.png";
 import wp3 from "../../images/wp3.png";
 import wp4 from "../../images/wp4.png";
+import aiu1 from "../../images/aiu1.png";
+import aiu2 from "../../images/aiu2.png";
+import aiu3 from "../../images/aiu3.png";
+import aiu4 from "../../images/aiu4.png";
 import arrow from "../../images/arrow.svg";
 import { useTranslation } from "react-i18next";
 
@@ -45,6 +49,75 @@ const MyWorks = () => {
     return (
         <div className={styles.works}>
             <div className={styles.blocks}>
+                <motion.div
+                    className={cn(styles.block, styles.first)}
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <div className={styles.left}>
+                        <div className={styles.left_info}>
+                            <div className={styles.left_info_title}>
+                                Apply Innopolis
+                            </div>
+                            <div className={styles.left_info_text}>
+                                {t("aiu1")} <span>{t("aiu2")}</span> {t("aiu3")}{" "}
+                                <span>{t("aiu4")}</span> {t("aiu5")}{" "}
+                                <span>{t("aiu6")}</span>.
+                            </div>
+                        </div>
+                        <div>
+                            <a
+                                className={styles.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://profile.innopolis.university/"
+                            >
+                                <button
+                                    className={styles.left_link}
+                                    type="button"
+                                >
+                                    {t("visit")}
+                                    <img
+                                        className={styles.left_link_image}
+                                        src={arrow}
+                                        alt=""
+                                    />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.right}>
+                        <div className={styles.right_block}>
+                            <div className={styles.right_column}>
+                                <img
+                                    className={styles.right_column_image}
+                                    src={aiu1}
+                                    alt=""
+                                />
+                                <img
+                                    className={styles.right_column_image}
+                                    src={aiu2}
+                                    alt=""
+                                />
+                            </div>
+                            <div className={styles.right_column}>
+                                <img
+                                    className={styles.right_column_image}
+                                    src={aiu3}
+                                    alt=""
+                                />
+                                <img
+                                    className={styles.right_column_image}
+                                    src={aiu4}
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+
                 <motion.div
                     className={cn(styles.block, styles.second)}
                     initial={{ opacity: 0, x: 100 }}
@@ -58,8 +131,8 @@ const MyWorks = () => {
                                 Try this
                             </div>
                             <div className={styles.left_info_text}>
-                                {t("tt1")} <span>{t("tt2")}</span>, {t('tt3')}
-                                <span>{t('tt4')}</span>.
+                                {t("tt1")} <span>{t("tt2")}</span>
+                                {t("tt3")} <span>{t("tt4")}</span>.
                             </div>
                         </div>
                         <div>
@@ -68,19 +141,7 @@ const MyWorks = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://www.figma.com/file/fd251qHK8AnIhVUxTA5AxU/try-this?type=design&node-id=1%3A515&mode=design&t=bQKPI8AKxzeYX3Ar-1"
-                            >
-                                <button
-                                    className={styles.left_link}
-                                    type="button"
-                                >
-                                    {t('show')}
-                                    <img
-                                        className={styles.left_link_image}
-                                        src={arrow}
-                                        alt=""
-                                    />
-                                </button>
-                            </a>
+                            ></a>
                         </div>
                     </div>
                     <div className={styles.right_another}>
@@ -116,7 +177,9 @@ const MyWorks = () => {
                                 Inno Table Tennis Club
                             </div>
                             <div className={styles.left_info_text}>
-                                {t('itt1')} <span>{t('itt2')}</span> {t('itt3')} 
+                                {t("itt1")} <span>{t("itt2")}</span> {t("itt3")}{" "}
+                                <span>{t("itt4")}</span>
+                                {t("itt5")}
                             </div>
                         </div>
                         <div>
@@ -124,13 +187,13 @@ const MyWorks = () => {
                                 className={styles.link}
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.figma.com/file/xIRYM7BFcV15q4hXwSEfop/TableTennis?type=design&node-id=388%3A619&mode=design&t=v2IOngT9DGJHPSVy-1"
+                                href="https://tabletennis.innopolis.university/new"
                             >
                                 <button
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    {t('show')}
+                                    {t("visit")}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -182,8 +245,9 @@ const MyWorks = () => {
                                 JellyCraft
                             </div>
                             <div className={styles.left_info_text}>
-
-                                <span>{t('jc1')}</span>{t('jc2')} <span>{t('jc3')}</span> {t('jc4')}
+                                <span>{t("jc1")}</span>{" "}
+                                {t("jc2")} <span>{t("jc3")}</span>{t("jc4")}{" "}
+                                <span>{t("jc5")}</span>.
                             </div>
                         </div>
                         <div>
@@ -194,7 +258,7 @@ const MyWorks = () => {
                                 href="https://jellycraft.net/"
                             >
                                 <button className={styles.left_link}>
-                                    {t('visit')}
+                                    {t("visit")}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -234,63 +298,6 @@ const MyWorks = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                    className={cn(styles.block, styles.second)}
-                    initial={{ opacity: 0, x: 100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
-                    viewport={{ once: true }}
-                >
-                    <div className={styles.left}>
-                        <div className={styles.left_info}>
-                            <div className={styles.left_info_title}>
-                                OneMenu
-                            </div>
-                            <div className={styles.left_info_text}>
-                                {t('om1')} <span>{t('om2')}</span>{t('om3')} 
-                            </div>
-                        </div>
-                        <div>
-                            <a
-                                className={styles.link}
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://www.figma.com/file/m78xN6GSOK6ZTT8gnUGFHx/OneMenu?type=design&node-id=63%3A11&mode=design&t=FnTlKymDxGIn8cd9-1"
-                            >
-                                <button
-                                    className={styles.left_link}
-                                    type="button"
-                                >
-                                    {t('show')}
-                                    <img
-                                        className={styles.left_link_image}
-                                        src={arrow}
-                                        alt=""
-                                    />
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div className={styles.right_another}>
-                        <div className={styles.right_another_block}>
-                            <img
-                                className={styles.right_another_image}
-                                src={om1}
-                                alt=""
-                            />
-                            <img
-                                className={styles.right_another_image}
-                                src={om2}
-                                alt=""
-                            />
-                            <img
-                                className={styles.right_another_image}
-                                src={om3}
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </motion.div>
-                <motion.div
                     className={cn(styles.block, styles.first)}
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -303,7 +310,7 @@ const MyWorks = () => {
                                 InnoBooking
                             </div>
                             <div className={styles.left_info_text}>
-                                {t('ib1')}<span>{t('ib2')}</span>{t('ib3')}
+                                {t("ib1")} <span>{t("ib2")}</span> {t("ib3")} <span>{t('ib4')}</span>{t('ib5')}
                             </div>
                         </div>
                         <div>
@@ -317,7 +324,7 @@ const MyWorks = () => {
                                     className={styles.left_link}
                                     type="button"
                                 >
-                                    {t('show')}
+                                    {t("show")}
                                     <img
                                         className={styles.left_link_image}
                                         src={arrow}
@@ -366,142 +373,11 @@ const MyWorks = () => {
                     <div className={styles.left}>
                         <div className={styles.left_info}>
                             <div className={styles.left_info_title}>
-                                Score Scout
-                            </div>
-                            <div className={styles.left_info_text}>
-                                {t('ss1')}<span>{t('ss2')}</span>{t('ss3')}
-                            </div>
-                        </div>
-                        <div>
-                            <a
-                                className={styles.link}
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://www.figma.com/file/499BGrIYN7O3YClxj9nLc3/ScoreScout?type=design&node-id=38%3A843&mode=design&t=evhICo0NZJJAwqSG-1"
-                            >
-                                <button
-                                    className={styles.left_link}
-                                    type="button"
-                                >
-                                    {t('show')}
-                                    <img
-                                        className={styles.left_link_image}
-                                        src={arrow}
-                                        alt=""
-                                    />
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div className={styles.right}>
-                        <div className={styles.right_block}>
-                            <div className={styles.right_column}>
-                                <img
-                                    className={styles.right_column_image}
-                                    src={ss1}
-                                    alt=""
-                                />
-                                <img
-                                    className={styles.right_column_image}
-                                    src={ss2}
-                                    alt=""
-                                />
-                            </div>
-                            <div className={styles.right_column}>
-                                <img
-                                    className={styles.right_column_image}
-                                    src={ss3}
-                                    alt=""
-                                />
-                                <img
-                                    className={styles.right_column_image}
-                                    src={ss4}
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-                <motion.div
-                    className={cn(styles.block, styles.first)}
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
-                    viewport={{ once: true }}
-                >
-                    <div className={styles.left}>
-                        <div className={styles.left_info}>
-                            <div className={styles.left_info_title}>
-                                Writer Project
-                            </div>
-                            <div className={styles.left_info_text}>
-                                {t('wp1')}<span>{t('wp2')}</span>{t('wp3')}<span>{t('wp4')}</span>{t('wp5')}
-                            </div>
-                        </div>
-                        <div>
-                            <a
-                                className={styles.link}
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://www.figma.com/file/499BGrIYN7O3YClxj9nLc3/ScoreScout?type=design&node-id=38%3A843&mode=design&t=evhICo0NZJJAwqSG-1"
-                            >
-                                <button
-                                    className={styles.left_link}
-                                    type="button"
-                                >
-                                    {t('show')}
-                                    <img
-                                        className={styles.left_link_image}
-                                        src={arrow}
-                                        alt=""
-                                    />
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div className={styles.right}>
-                        <div className={styles.right_block}>
-                            <div className={styles.right_column}>
-                                <img
-                                    className={styles.right_column_image}
-                                    src={wp1}
-                                    alt=""
-                                />
-                                <img
-                                    className={styles.right_column_image}
-                                    src={wp2}
-                                    alt=""
-                                />
-                            </div>
-                            <div className={styles.right_column}>
-                                <img
-                                    className={styles.right_column_image}
-                                    src={wp3}
-                                    alt=""
-                                />
-                                <img
-                                    className={styles.right_column_image}
-                                    src={wp4}
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-                <motion.div
-                    className={cn(styles.block, styles.first)}
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
-                    viewport={{ once: true }}
-                >
-                    <div className={styles.left}>
-                        <div className={styles.left_info}>
-                            <div className={styles.left_info_title}>
                                 Friendly Carrier
                             </div>
-                            <div className={styles.left_info_text}>
-                                {t('fc1')}<span>{t('fc2')}</span>{t('fc3')}<span>{t('fc4')}</span>{t('fc5')} 
+                            <div className={styles.left_info_text}> 
+                             
+                                {t("fc1")} <span>{t("fc2")}</span>{t("fc3")}
                             </div>
                         </div>
                         <div>
@@ -548,72 +424,6 @@ const MyWorks = () => {
                                 <img
                                     className={styles.right_column_image}
                                     src={fc4}
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-                <motion.div
-                    className={cn(styles.block, styles.second)}
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
-                    viewport={{ once: true }}
-                >
-                    <div className={styles.left}>
-                        <div className={styles.left_info}>
-                            <div className={styles.left_info_title}>
-                                This site
-                            </div>
-                            <div className={styles.left_info_text}>
-                                {t('p1')}<span>{t('p2')}</span>{t('p3')}
-                            </div>
-                        </div>
-                        <div>
-                            <a
-                                className={styles.link}
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://www.figma.com/file/V0WaAKDHpUDIsAQQ2gtOKS/MUI-for-Figma-(Community-version)-(with-Material-UI)-(Community)?type=design&node-id=5703%3A69518&mode=design&t=4e1cQ5NOfvm48EgS-1"
-                            >
-                                <button
-                                    className={styles.left_link}
-                                    type="button"
-                                >
-                                    {t('show')}
-                                    <img
-                                        className={styles.left_link_image}
-                                        src={arrow}
-                                        alt=""
-                                    />
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div className={styles.right}>
-                        <div className={styles.right_block}>
-                            <div className={styles.right_column}>
-                                <img
-                                    className={styles.right_column_image}
-                                    src={p1}
-                                    alt=""
-                                />
-                                <img
-                                    className={styles.right_column_image}
-                                    src={p4}
-                                    alt=""
-                                />
-                            </div>
-                            <div className={styles.right_column}>
-                                <img
-                                    className={styles.right_column_image}
-                                    src={p3}
-                                    alt=""
-                                />
-                                <img
-                                    className={styles.right_column_image}
-                                    src={p2}
                                     alt=""
                                 />
                             </div>
