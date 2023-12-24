@@ -117,7 +117,6 @@ const MyWorks = () => {
                         </div>
                     </div>
                 </motion.div>
-
                 <motion.div
                     className={cn(styles.block, styles.second)}
                     initial={{ opacity: 0, x: 100 }}
@@ -234,7 +233,7 @@ const MyWorks = () => {
                 </motion.div>
                 <motion.div
                     className={cn(styles.block, styles.first)}
-                    initial={{ opacity: 0, x: -100 }}
+                    initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
@@ -314,24 +313,6 @@ const MyWorks = () => {
                             </div>
                         </div>
                         <div>
-                            <a
-                                className={styles.link}
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://www.figma.com/file/xIRYM7BFcV15q4hXwSEfop/TableTennis?type=design&node-id=388%3A619&mode=design&t=v2IOngT9DGJHPSVy-1"
-                            >
-                                <button
-                                    className={styles.left_link}
-                                    type="button"
-                                >
-                                    {t("show")}
-                                    <img
-                                        className={styles.left_link_image}
-                                        src={arrow}
-                                        alt=""
-                                    />
-                                </button>
-                            </a>
                         </div>
                     </div>
                     <div className={styles.right}>
@@ -365,7 +346,7 @@ const MyWorks = () => {
                 </motion.div>
                 <motion.div
                     className={cn(styles.block, styles.first)}
-                    initial={{ opacity: 0, x: -100 }}
+                    initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
@@ -426,6 +407,32 @@ const MyWorks = () => {
                                     src={fc4}
                                     alt=""
                                 />
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    className={cn(styles.block, styles.first)}
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <div className={styles.left}>
+                        <div className={styles.left_info}>
+                            <div className={styles.left_info_title}>
+                                Spaceteh
+                            </div>
+                            <div className={styles.left_info_text}> 
+                                {t('s1')} <span>{t('s2')}</span>{t('s3')} <span>{t('s4')}</span>{t('s5')}
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div className={styles.right}>
+                        <div className={styles.right_block}>
+                            <div className={styles.right_column}>
                             </div>
                         </div>
                     </div>
