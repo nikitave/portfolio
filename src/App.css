@@ -1,7 +1,7 @@
 body {
   /* background: url('./images/background.png'); */
   /* background: #5F2899 ; */
-  background: linear-gradient(45deg, #5F2899 0%, #854BBF 100%);
+  background-color: #fff;
   background-size: cover;
   height: 100vh;
   margin: 0;

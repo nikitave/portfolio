@@ -4,7 +4,7 @@
     position: absolute;
     top: 1rem;
     left: 0;
-    width: 97.5%;
+    width: 95%;
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -12,28 +12,34 @@
     z-index: 100;
 }
 
+
+.burger {
+    display: none;
+}
+
 .links {
-    font-size: 2em;
+    font-size: 1.5em;
+    line-height: 1.8em;
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .link {
-    color: rgba($text_color, 0.7);
+    color: $hint;
     text-decoration: none;
     transition: 0.2s linear;
 }
 
 .link:hover {
-    color: $text_color;
+    color: $font;
 }
 
 .active {
-    color: $main_color;
+    color: $font;
 }
 
 .active:hover {
-    color: $main_color;
+    color: $font;
 }
 
 .activeD {
@@ -51,14 +57,14 @@
 .header_button {
     background: none;
     outline: none;
-    border: 2px solid $text_color;
+    border: 2px solid $font;
     border-radius: 12px;
     cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 4em;
     font-size: 1.2rem;
-    color: $text_color;
+    color: $font;
     margin-left: 3rem;
     font-family: 'Nunito';
 }
@@ -117,7 +123,7 @@
     }
 
     .links_mobile {
-        display: flex;
+        // display: flex;
         flex-direction: column;
         align-items: flex-end;
         height: 40vh;
@@ -131,14 +137,14 @@
 
     .mobile_link {
         font-size: 3em;
-        color: $text_not_chosen_color;
+        color: $hint;
         text-align: right;
     }
 
     .mobile_link_active {
-        color: $main_color;
+        color: $main;
         width: 10rem;
-        border-left: 4px solid $main_color;
+        border-left: 4px solid $main;
     }
 
     .link_flex {

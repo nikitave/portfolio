@@ -22,7 +22,7 @@ function App() {
 	};
 	return (
 		<div className={cn("app", location === "portfolio" ? "back" : "")}>
-			<Header color={color} colorTwo={colorTwo} />
+			{/* <Header color={color} colorTwo={colorTwo} /> */}
 			<Routes>
 				<Route path="/portfolio" element={<Main />} />
 				<Route path="/about-me" element={<AboutMe onHover={handleHoverTwo} />} />

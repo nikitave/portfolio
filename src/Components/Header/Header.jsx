@@ -30,15 +30,6 @@ const Header = ({ color, colorTwo }) => {
     return (
         <div className={styles.header}>
             <div className={styles.links}>
-                {/* <Link
-                    className={cn(styles.link, {
-                        [styles.active]: location.pathname === "/about-me",
-                        [styles.activeD]: colorTwo,
-                    })}
-                    to="/about-me"
-                >
-                    About Me
-                </Link> */}
                 <Link
                     className={cn(styles.link, {
                         [styles.active]: location.pathname === "/my-works",
@@ -57,16 +48,6 @@ const Header = ({ color, colorTwo }) => {
                     Contact Me
                 </Link>
             </div>
-            {language === true && (
-                <button onClick={() => changeLanguage('en')} className={styles.header_button}>
-                    EN
-                </button>
-            )}
-            {language === false && (
-                <button onClick={() => changeLanguage('ru')} className={styles.header_button}>
-                    RU
-                </button>
-            )}
             <div
                 className={cn(
                     styles.links_mobile,
@@ -84,15 +65,6 @@ const Header = ({ color, colorTwo }) => {
                     <img className={styles.menu_image} src={close} alt="" />
                 </button>
                 <div className={styles.link_flex}>
-                    {/* <Link
-                        className={cn(styles.mobile_link, {
-                            [styles.mobile_link_active]:
-                                location.pathname === "/about-me",
-                        })}
-                        to="/about-me"
-                    >
-                        About Me
-                    </Link> */}
                     <Link
                         className={cn(styles.mobile_link, {
                             [styles.mobile_link_active]:

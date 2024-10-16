@@ -14,63 +14,284 @@
 	display: none;
 }
 
-.choice {
-	height: 100vh;
+.header {
+	background-color: $secondary-bg-color;
+	position: fixed;
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 10px;
 	display: flex;
-	width: 100%;
-	gap: 1rem;
-	overflow: hidden;
+	justify-content: flex-end;
+	border-radius:  40px;
 }
 
-.block {
-	z-index: 6;
-	height: 120vh;
-	width: 48%;
-	transform: rotate(5deg);
-	background-color: $secondary_bg_color;
+// .header_elements {
+// 	padding-top: 30px;
+// 	padding-bottom: 30px;
+// 	padding-right: 5%;
+// 	align-items: center;
+// 	display: flex;
+// 	gap: 2.5rem;
+// }
+
+.burger_menu {
+	display: none;
+}
+
+.desktop_links {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	// padding-right: 5%;
+	margin-right: 80px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 2.5rem;
+}
+
+.burger_icon {
+    display: none; /* Initially hidden, displayed for mobile */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1000; /* Ensures it is above other elements */
+}
+
+.burger_line {
+    width: 100%;
+    height: 4px;
+    background-color: #333; /* Adjust color based on your design */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Burger Menu */
+.burger_menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #fff; /* Background color for the menu */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; /* Space for the burger icon */
+    transition: transform 0.3s ease;
+    transform: translateX(100%); /* Initially hidden off-screen */
+    z-index: 999;
+}
+
+/* Show burger menu when toggled */
+.burger_menu.open {
+    transform: translateX(0); /* Move menu in when opened */
+}
+
+/* Menu Items */
+.menu_item {
+    padding: 15px 25px;
+    border-bottom: 1px solid #ddd;
+    color: #333; /* Adjust text color */
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.menu_item:hover {
+    background-color: #f0f0f0; /* Hover effect */
+}
+
+/* Language Switcher inside burger menu */
+.burger_menu .languageSwitcher {
+    margin-top: auto; /* Push language switcher to the bottom */
+    padding: 15px;
+    text-align: left;
+}
+
+.language_button {
+	background: none;
+	outline: none;
+	font-size: 20px;
+	padding: 0.4rem 1.2rem;
+	border: 2px solid $hint;
+	color: $hint;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.language_button:hover {
+	color: $title;
+}
+
+.choice {
+	background-color: $bg_color;
+	width: 100%;
+	padding: 3.75rem 6.25rem;
+	padding-bottom: 0;
+}
+
+.works {
 	display: flex;
 	flex-direction: column;
-	margin-top: -10vh;
-	transition: 0.2s linear;
-	padding-left: 1rem;
+	margin-top: 2.5rem;
+	gap: 1.25rem;
+}
+
+.work {
+	width: 75%;
+	background-color: $secondary-bg-color;
+	height: 25.125rem;
+	border-radius: 40px;
+	display: flex;
+}
+
+.left_part {
+	width: 50%;
+	padding: 1.875rem 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.right_part {
+	width: 50%;
+	// display: flex;
+	justify-content: center;
+	margin: auto 0;
+}
+
+.right_part_image {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* X-axis and Y-axis shadows */
+	0 6px 20px rgba(0, 0, 0, 0.1); /* Spread radius shadows */
+	width: 95%;
+	margin-left: 2.5%;
+	height: auto;
+	max-height: 100%;
+	border-radius: 10px;
+}
+
+.contacts {
+	margin-top: 30px;
+	display: flex;
+	gap: 20px;
+	padding-bottom: 60px;
+}
+
+.contact {
+	width: 29%;
+	background-color: $secondary-bg-color;
+	padding: 30px 40px;
+	border-radius: 40px;
+}
+
+.footer {
+	background-color: $bg_color;
+	text-align: center;	
+	padding-bottom: 20px;
+}
+
+.display_large {
+	font-size: 3.125rem;
+	line-height: 3.125rem;
+	color: $title;
+	font-weight: 700;
+}
+
+.large_title {
+	font-size: 2.5rem;
+	line-height: 2.75rem;
+	font-weight: 700;
+	color: $title;
 }
 
 .title {
-	margin-top: 30vh;
-	font-size: 3em;
-	color: $text_color;
-	transition: 0.2s linear;
-	font-weight: 600;
-	transition: 0.2s linear;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	font-weight: 700;
+	color: $title;
+}
+
+.large_element {
+	font-size: 1.5rem;
+	line-height: 1.875rem;
+	font-weight: 500;
+	color: $font;
+}
+
+.element {
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+	font-weight: 500;
+	color: $font;
 }
 
 .text {
-	margin-top: 1.5rem;
-	color: $text_color;
-	font-size: 2em;
-	width: 70%;
-	transition: 0.2s linear;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+	color: $font;
 }
 
-.text span {
-	color: $main_color;
-	transition: 0.2s linear;
+.small_text {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 400;
+	color: $hint;
 }
 
-.block:hover {
-	background-color: $main_color;
+.info {
+	margin-top: 10px;
+}
 
-	.title {
-		color: $bg_color;
-	}
+.links {
+	text-decoration: none;
+}
 
-	.text {
-		color: $secondary_bg_color;
-	}
+.links_text {
+	color: $hint;
+	
+}
 
-	.text span {
-		color: $bg_color;
-	}
+.links_text:hover {
+	color: $title;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.popup_date {
+	margin-top: 4px;
+}
+
+.popup_text {
+	width: 83%;
+	margin-top: 10px;
+}
+
+.page_block {
+	background-color: $secondary-bg-color;
+	border-radius: 40px;
+	margin-top: 2.5rem;
+	padding: 1.875rem 2.5rem ;
+}
+
+.page_block_text {
+	margin-top: 10px;
+	width: 90%;
+}
+
+.page_block_image {
+	margin-top: 20px;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* X-axis and Y-axis shadows */
+              0 6px 20px rgba(0, 0, 0, 0.1); /* Spread radius shadows */
 }
 
 .banner {
@@ -81,30 +302,35 @@
 }
 
 .content {
-	padding-top: 40vh;
-	padding-left: 2.5%;
+	display: flex;
+	flex-direction: column;
+	// padding-top: 40vh;
+	justify-content: center;
+	padding-left: 6.25rem;
 }
 
 .content_text {
-	font-size: 3.125em;
-	color: $text_color;
+	font-size: 6.25em;
+	line-height: 1;
+	color: $font;
 }
 
 .content_title {
-	color: $main_color;
-	font-family: "Baskerville";
-	margin-bottom: 2rem;
-	font-size: 8em;
-	letter-spacing: 1rem;
+	color: $main;
+	font-family: "Nunito";
+	margin-top: 1.25rem;
+	font-size: 3.125em;
+	line-height: 1;
 }
 
 .button {
-	width: 30rem;
-	font-size: 2em;
-	height: 5rem;
+	padding: 10px 20px;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
 	outline: none;
 	border: none;
-	background-color: $main_color;
+	background-color: $main;
 	color: $bg_color;
 	border-radius: 20px;
 	cursor: pointer;
@@ -113,8 +339,7 @@
 }
 
 .button:hover {
-	scale: 1.02;
-	box-shadow: 2px 2px 5px black;
+	background-color: $main-hovered;
 }
 
 .button:focus {
@@ -135,7 +360,7 @@
 
 .content_button {
 	z-index: 5;
-	position: absolute;
+	// position: absolute;
 	bottom: 10px;
 	left: 47.5%;
 	border: none;
@@ -159,12 +384,12 @@
 .show_image {
 	width: 6rem;
 	height: 6rem;
-	color: $text_not_chosen_color;
+	color: $hint;
 	transition: 0.2s linear;
 }
 
 .show_image:hover {
-	color: $text_color;
+	color: $font;
 	scale: 1.05;
 }
 
@@ -189,6 +414,15 @@
 		width: 20rem;
 		height: 3.5rem;
 	}
+	.choice {
+		padding: 4rem 3rem;
+	}
+	.works {
+		width: 90%;
+	}
+	.work {
+		width: 100%;
+	}
 }
 
 @media (max-width: 850px) {
@@ -212,20 +446,30 @@
 	.main {
 		font-size: 6px;
 	}
-	.content_text {
-		white-space: wrap;
-		line-height: 2rem;
-		font-size: 4em;
-	}
-	.content_title {
-		letter-spacing: 0.5rem;
-		margin-bottom: 1.5rem;
-		font-size: 10em;
-	}
 
 	.content_button {
 		left: 45%;
 	}
+
+	.desktop_links {
+		display: none;
+	}
+
+	.burger_icon {
+		display: flex;
+	}
+
+	.burger_icon.active .burger_line:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }
+
+    .burger_icon.active .burger_line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger_icon.active .burger_line:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+    }
 
 	.button {
 		width: 12rem;
@@ -242,28 +486,6 @@
 	.choice {
 		flex-direction: column;
 		height: 100vh;
-	}
-
-	.block {
-		z-index: 11;
-		width: 120%;
-		margin-left: -10%;
-		transform: rotate(5deg);
-		height: 49%;
-		margin-top: 0;
-	}
-
-	.title {
-		margin-top: 5vh;
-		font-size: 4em;
-		padding-left: 10%;
-	}
-
-	.text {
-		font-size: 3em;
-		width: 60%;
-		padding-left: 10%;
-		margin-top: 0.5rem;
 	}
 
 	.image_block {
