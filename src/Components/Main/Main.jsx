@@ -192,10 +192,6 @@ const Main = () => {
                                 <div className={styles.title}>
                                     My.university
                                 </div>
-                                <div className={styles.date}>
-                                    <div className={styles.element}>
-                                    </div>
-                                </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
                                     {/* Личный кабинет студента Университета Иннополис 
@@ -271,10 +267,6 @@ const Main = () => {
                                 <div className={styles.title}>
                                     Apply Innopolis University
                                 </div>
-                                <div className={styles.date}>
-                                    <div className={styles.element}>
-                                    </div>
-                                </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
                                     {t('apply').split('\n').map((line, index) => (
@@ -335,10 +327,6 @@ const Main = () => {
                             <div className={styles.text_info}>
                                 <div className={styles.title}>
                                     Inno Table Tennis
-                                </div>
-                                <div className={styles.date}>
-                                    <div className={styles.element}>
-                                    </div>
                                 </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
