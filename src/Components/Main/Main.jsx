@@ -215,9 +215,6 @@ const Main = () => {
                                     <div className={styles.display_large}>
                                         My.university
                                     </div>
-                                    <div className={cn(styles.large_element, styles.popup_date)}>
-                                    {t("date1")}
-                                    </div>
                                     <div className={cn(styles.text, styles.popup_text)}>
                                         {t('my-university').split('\n').map((line, index) => (
                                             <span key={index}>
@@ -284,9 +281,6 @@ const Main = () => {
                                     <div className={styles.display_large}>
                                         Apply Innopolis University
                                     </div>
-                                    <div className={cn(styles.large_element, styles.popup_date)}>
-                                        {t("date2")}
-                                    </div>
                                     <div className={cn(styles.text, styles.popup_text)}>
                                     {t('apply').split('\n').map((line, index) => (
                                             <span key={index}>
@@ -345,9 +339,6 @@ const Main = () => {
                                 <Popup show={isPopupVisible3} handleClose={togglePopup3}>
                                     <div className={styles.display_large}>
                                         Inno Table Tennis
-                                    </div>
-                                    <div className={cn(styles.large_element, styles.popup_date)}>
-                                        {t("date3")}
                                     </div>
                                     <div className={cn(styles.text, styles.popup_text)}>
                                         {t('sport').split('\n').map((line, index) => (
