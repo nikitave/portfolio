@@ -396,10 +396,6 @@ const Main = () => {
                                 <div className={styles.title}>
                                     Portfolio
                                 </div>
-                                <div className={styles.date}>
-                                    <div className={styles.element}>
-                                    </div>
-                                </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
                                         {t("portfolio")}
