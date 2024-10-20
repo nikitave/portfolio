@@ -60,3 +60,25 @@
 .close_icon:hover {
   color: $icon-hovered;
 }
+
+@media (max-width: 700px) {
+  .popup {
+    width: 90%;
+    border-radius: 30px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .popup_content {
+    width: 100%;
+  }
+  
+  .close_icon {
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+}
