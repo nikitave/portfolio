@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.26e12d24.css",
-    "main.js": "/portfolio/static/js/main.6b235019.js",
+    "main.css": "/portfolio/static/css/main.8b200f53.css",
+    "main.js": "/portfolio/static/js/main.e3e41004.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/portfolio.png": "/portfolio/static/media/portfolio.0de9a3a4bc17a10ef844.png",
+    "static/media/comD1.png": "/portfolio/static/media/comD1.a33be388f7d879cf1b68.png",
     "static/media/backgroundImage.png": "/portfolio/static/media/backgroundImage.985882046dcbaa77b182.png",
-    "static/media/events.png": "/portfolio/static/media/events.eb1053c2b32a16d723b7.png",
-    "static/media/components.png": "/portfolio/static/media/components.a64c283a96e8c07f3a6f.png",
-    "static/media/players.png": "/portfolio/static/media/players.726a6bd63a4243be8aae.png",
-    "static/media/sport_myuniversity.png": "/portfolio/static/media/sport_myuniversity.13cdb96d475bda9b02d6.png",
+    "static/media/comD2.png": "/portfolio/static/media/comD2.0d0fa62b91e2dddaa3f7.png",
+    "static/media/aiu2.png": "/portfolio/static/media/aiu2.928bd073a016d31a5b3e.png",
+    "static/media/mu3.png": "/portfolio/static/media/mu3.2360ff6bcb6ec2292873.png",
+    "static/media/mu2.png": "/portfolio/static/media/mu2.c4a0a19499e459948589.png",
+    "static/media/comD4.png": "/portfolio/static/media/comD4.ce842d3ac929e1bae384.png",
+    "static/media/aiu3.png": "/portfolio/static/media/aiu3.0d2cca0aed53363eb4b7.png",
     "static/media/Nunito-Regular.ttf": "/portfolio/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
     "static/media/Nunito-SemiBold.ttf": "/portfolio/static/media/Nunito-SemiBold.77c1e330694154d3efed.ttf",
+    "static/media/comD3.png": "/portfolio/static/media/comD3.c782c36d4c8f64853fee.png",
     "static/media/Baskervville-Regular.ttf": "/portfolio/static/media/Baskervville-Regular.f901739d83410218a9d2.ttf",
-    "static/media/sport.png": "/portfolio/static/media/sport.bc6d06a6eb649cb9f1d9.png",
-    "static/media/tournament.png": "/portfolio/static/media/tournament.7a108797d73ad2433ae9.png",
-    "static/media/tests.png": "/portfolio/static/media/tests.f56873fba2eef8a70c3c.png",
-    "static/media/booking.png": "/portfolio/static/media/booking.3bd4a90beaa27ab650cf.png",
+    "static/media/mu1.png": "/portfolio/static/media/mu1.158b68b51faac0093aeb.png",
+    "static/media/mu4.png": "/portfolio/static/media/mu4.4fbfd6b294af32e02634.png",
+    "static/media/aiu4.png": "/portfolio/static/media/aiu4.e0715c7b9adc55c3b70e.png",
+    "static/media/aiu1.png": "/portfolio/static/media/aiu1.9e93108c288b0521d74b.png",
     "static/media/close.svg": "/portfolio/static/media/close.962e272f59ec72a4b87bd01e91ddcefa.svg",
     "index.html": "/portfolio/index.html",
     "static/media/menu.svg": "/portfolio/static/media/menu.63c536e27671485d1666233636906d44.svg",
-    "main.26e12d24.css.map": "/portfolio/static/css/main.26e12d24.css.map",
-    "main.6b235019.js.map": "/portfolio/static/js/main.6b235019.js.map",
+    "main.8b200f53.css.map": "/portfolio/static/css/main.8b200f53.css.map",
+    "main.e3e41004.js.map": "/portfolio/static/js/main.e3e41004.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26e12d24.css",
-    "static/js/main.6b235019.js"
+    "static/css/main.8b200f53.css",
+    "static/js/main.e3e41004.js"
   ]
 }
