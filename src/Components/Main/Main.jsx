@@ -6,15 +6,19 @@ import me from "../../images/backgroundImage.png";
 import { useTranslation } from "react-i18next";
 import cn from "classnames";
 import Popup from "../Popups/Popup";
-import sport_myuniversity from "../../images/sport_myuniversity.png";
-import sport from "../../images/sport.png";
-import portflio from '../../images/portfolio.png';
-import events from '../../images/events.png';
-import tests from '../../images/tests.png';
-import players from '../../images/players.png';
-import tournament from '../../images/tournament.png';
-import components from '../../images/components.png';
-import booking from '../../images/booking.png';
+import comD1 from '../../images/comD1.png';
+import comD2 from '../../images/comD2.png';
+import comD3 from '../../images/comD3.png';
+import comD4 from '../../images/comD4.png';
+import mu1 from '../../images/mu1.png';
+import mu2 from '../../images/mu2.png';
+import mu3 from '../../images/mu3.png';
+import mu4 from '../../images/mu4.png';
+import aiu1 from '../../images/aiu1.png';
+import aiu2 from '../../images/aiu2.png';
+import aiu3 from '../../images/aiu3.png';
+import aiu4 from '../../images/aiu4.png';
+
 
 
 const Main = () => {
@@ -24,24 +28,26 @@ const Main = () => {
     };
 
     const { t, i18n } = useTranslation();
+    const tt = i18n.t('my-university').replace(/{lineBreak}/g, '\n');
 
-    const [isPopupVisible1, setIsPopupVisible1] = useState(false);
+    const [isPopupVisibleComD, setIsPopupVisibleComD] = useState(false);
 
-    const togglePopup1 = () => {
-      setIsPopupVisible1(!isPopupVisible1);
+    const togglePopupComD = () => {
+      setIsPopupVisibleComD(!isPopupVisibleComD);
     };
 
-    const [isPopupVisible2, setIsPopupVisible2] = useState(false);
+    const [isPopupVisibleMU, setIsPopupVisibleMU] = useState(false);
 
-    const togglePopup2 = () => {
-      setIsPopupVisible2(!isPopupVisible2);
+    const togglePopupMU = () => {
+      setIsPopupVisibleMU(!isPopupVisibleMU);
     };
 
-    const [isPopupVisible3, setIsPopupVisible3] = useState(false);
+    const [isPopupVisibleAIU, setIsPopupVisibleAUI] = useState(false);
 
-    const togglePopup3 = () => {
-      setIsPopupVisible3(!isPopupVisible3);
+    const togglePopupAUI = () => {
+      setIsPopupVisibleAUI(!isPopupVisibleAIU);
     };
+
 
     const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
@@ -52,13 +58,14 @@ const Main = () => {
     };
 
     useEffect(() => {
-        if (i18n.language !== 'ru') {
-            i18n.changeLanguage('ru');
+        if (i18n.language !== 'en') {
+            i18n.changeLanguage('en');
         }
     }, [i18n]);
 
     return (
         <div className={styles.main}>
+
             <div className={styles.header}>
                 <div className={styles.header_elements}>
                     {/* Burger Menu Icon */}
@@ -95,9 +102,9 @@ const Main = () => {
                         <a className={styles.links} href="#works"> 
                             <div className={cn(styles.large_element, styles.links_text)}> {t("works")} </div>
                         </a>
-                        <a className={styles.links} href="#figma"> 
+                        {/* <a className={styles.links} href="#figma"> 
                             <div className={cn(styles.large_element, styles.links_text)}> {t("examples")} </div>
-                        </a>
+                        </a> */}
                         <a className={styles.links} href="#contact">
                             <div className={cn(styles.large_element, styles.links_text)}>{t("contacts")} </div>
                         </a>
@@ -110,8 +117,8 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
+
             <div className={styles.banner}>
                 <div className={styles.content}>
                     <motion.div
@@ -148,7 +155,7 @@ const Main = () => {
                         }}
                         viewport={{ once: true }}
                     >
-                        UX/UI Designer
+                        Product Designer
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -181,16 +188,22 @@ const Main = () => {
                     <img className={styles.image} src={me} alt="" />
                 </div>
             </div>
+            
             <div id="works" className={styles.choice}>
                 <div className={styles.large_title}>
                     {t("works")}
                 </div>
+
                 <div className={styles.works}>
-                    <div className={styles.work}>
+
+                <div className={styles.work}>
                         <div className={styles.left_part}>
                             <div className={styles.text_info}>
                                 <div className={styles.title}>
-                                    My.university
+                                    ComD
+                                </div>
+                                <div className={styles.text}>
+                                    November 2024 - December 2024
                                 </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
@@ -200,183 +213,323 @@ const Main = () => {
                                         <div>- Управление командой из трех человек (создание спринтов, проведение митингов, проверка выполнения задач)</div>
                                         - Разработал прототип веб-приложения
                                         <div>- Провел usability тестирование</div> */}
-                                          {t('my-university').split('\n').map((line, index) => (
+                                        {t('short-c')}
+                                          {/* {t('my-university').split('\n').map((line, index) => (
                                             <span key={index}>
                                             {line}
                                             <br />
                                             </span>
-                                          ))}
+                                          ))} */}
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <button onClick={togglePopup1} className={styles.button}>{t("more")} </button>
-                                <Popup show={isPopupVisible1} handleClose={togglePopup1}>
+                                <button onClick={togglePopupComD} className={styles.button}>{t("more")} </button>
+                                <Popup show={isPopupVisibleComD} handleClose={togglePopupComD}>
                                     <div className={styles.display_large}>
-                                        My.university
+                                        ComD
                                     </div>
-                                    <div className={cn(styles.text, styles.popup_text)}>
+                                    {/* <div className={cn(styles.text, styles.popup_text)}>
                                         {t('my-university').split('\n').map((line, index) => (
                                             <span key={index}>
                                             {line}
                                             <br />
                                             </span>
                                         ))}
-                                    </div>
+                                    </div> */}
                                     <div className={styles.page_block}>
                                         <div className={styles.title}>
-                                            {t("fittest")}
+                                            {t("overview")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t("fittest-description")}  
+                                            {t('overview-c')}
                                         </div>
-                                        <img className={styles.page_block_image} src={sport} alt="" />
                                     </div>
                                     <div className={styles.page_block}>
                                         <div className={styles.title}>
-                                            {t("sport-info")}
+                                            {t("problem")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
                                             {t('sport-info-description')}
                                         </div>
-                                        <img className={styles.page_block_image} src={sport_myuniversity} alt="" />
                                     </div>
                                     <div className={styles.page_block}>
                                         <div className={styles.title}>
-                                            {t("components")}
+                                            {t("role")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t("components-description")}
+                                            {/* {t("role-c")} */}
+                                            {t('role-c').split('\n').map((line, index) => (
+                                                <span key={index}>
+                                                {line}
+                                                <br />
+                                                </span>
+                                            ))}
+                                            
                                         </div>
-                                        <img className={styles.page_block_image} src={components} alt="" />
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("process")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                        {t('process-c').split('\n').map((line, index) => (
+                                                <span key={index}>
+                                                {line}
+                                                <br />
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    {/* <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("results")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                        </div>
+                                    </div> */}
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("screens")}
+                                        </div>
+                                        <img className={styles.page_block_image} src={comD1} alt="" />
+                                        <img className={styles.page_block_image} src={comD2} alt="" />
+                                        <img className={styles.page_block_image} src={comD4} alt="" />
+                                        <img className={styles.page_block_image} src={comD3} alt="" />
                                     </div>
                                 </Popup>
                             </div>
                         </div>
                         <div className={styles.right_part}>
-                            <img className={styles.right_part_image} src={sport} alt="" />
+                            <img className={styles.right_part_image} src={comD1} alt="" />
                         </div>
-                    </div>
+                </div>
 
-                    <div className={styles.work}>
+                <div className={styles.work}>
+                        <div className={styles.left_part}>
+                            <div className={styles.text_info}>
+                                <div className={styles.title}>
+                                    my.university
+                                </div>
+                                <div className={styles.text}>
+                                    November 2023 - December 2024
+                                </div>
+                                <div className={styles.info}>
+                                    <div className={styles.text}>
+                                    {/* Личный кабинет студента Университета Иннополис 
+                                        <div>- Провел исследование и опрос ЦА</div>
+                                        <div>- Создание дизайн системы (библиотека компонентов и гайдлан по использованию шрифтов, цветов и тд)</div>
+                                        <div>- Управление командой из трех человек (создание спринтов, проведение митингов, проверка выполнения задач)</div>
+                                        - Разработал прототип веб-приложения
+                                        <div>- Провел usability тестирование</div> */}
+                                        {t('short-mu')}
+                                          {/* {t('my-university').split('\n').map((line, index) => (
+                                            <span key={index}>
+                                            {line}
+                                            <br />
+                                            </span>
+                                          ))} */}
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button onClick={togglePopupMU} className={styles.button}>{t("more")} </button>
+                                <Popup show={isPopupVisibleMU} handleClose={togglePopupMU}>
+                                    <div className={styles.display_large}>
+                                        my.university
+                                    </div>
+                                    {/* <div className={cn(styles.text, styles.popup_text)}>\ */}
+                                        {/* {t('short-mu')} */}
+                                        {/* {t('my-university').split('\n').map((line, index) => (
+                                            <span key={index}>
+                                            {line}
+                                            <br />
+                                            </span>
+                                        ))} */}
+                                    {/* </div> */}
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("overview")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {t('overview-mu')}
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("problem")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {t('problem-mu')}
+                                           
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("role")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {/* {t('role-mu')} */}
+                                            {t('role-mu').split('\n').map((line, index) => (
+                                            <span key={index}>
+                                            {line}
+                                            <br />
+                                            </span>
+                                          ))}
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("process")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {t('process-mu').split('\n').map((line, index) => (
+                                                <span key={index}>
+                                                {line}
+                                                <br />
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("results")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {t('results-mu')}
+                                            
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("screens")}
+                                        </div>
+                                        <img className={styles.page_block_image} src={mu1} alt="" />
+                                        <img className={styles.page_block_image} src={mu2} alt="" />
+                                        <img className={styles.page_block_image} src={mu3} alt="" />
+                                        <img className={styles.page_block_image} src={mu4} alt="" />
+                                    </div>
+                                </Popup>
+                            </div>
+                        </div>
+                        <div className={styles.right_part}>
+                            <img className={styles.right_part_image} src={mu1} alt="" />
+                        </div>
+                </div>
+
+                <div className={styles.work}>
                         <div className={styles.left_part}>
                             <div className={styles.text_info}>
                                 <div className={styles.title}>
                                     Apply Innopolis University
                                 </div>
+                                <div className={styles.text}>
+                                    November 2022 - April 2023
+                                </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
-                                    {t('apply').split('\n').map((line, index) => (
+                                    {/* Личный кабинет студента Университета Иннополис 
+                                        <div>- Провел исследование и опрос ЦА</div>
+                                        <div>- Создание дизайн системы (библиотека компонентов и гайдлан по использованию шрифтов, цветов и тд)</div>
+                                        <div>- Управление командой из трех человек (создание спринтов, проведение митингов, проверка выполнения задач)</div>
+                                        - Разработал прототип веб-приложения
+                                        <div>- Провел usability тестирование</div> */}
+                                        {t('short-aiu')}
+                                          {/* {t('my-university').split('\n').map((line, index) => (
                                             <span key={index}>
                                             {line}
                                             <br />
                                             </span>
-                                    ))}
+                                          ))} */}
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <button onClick={togglePopup2} className={styles.button}>{t("more")}</button>
-                                <Popup show={isPopupVisible2} handleClose={togglePopup2}>
+                                <button onClick={togglePopupAUI} className={styles.button}>{t("more")} </button>
+                                <Popup show={isPopupVisibleAIU} handleClose={togglePopupAUI}>
                                     <div className={styles.display_large}>
                                         Apply Innopolis University
                                     </div>
-                                    <div className={cn(styles.text, styles.popup_text)}>
-                                    {t('apply').split('\n').map((line, index) => (
+                                    {/* <div className={cn(styles.text, styles.popup_text)}>
+                                        {t('my-university').split('\n').map((line, index) => (
                                             <span key={index}>
                                             {line}
                                             <br />
                                             </span>
-                                    ))}
+                                        ))}
+                                    </div> */}
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("overview")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {t('overview-aiu')}
+                                        </div>
                                     </div>
                                     <div className={styles.page_block}>
                                         <div className={styles.title}>
-                                            {t("event")}
+                                            {t("problem")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t("event-description")}
+                                            {t('problem-aiu')}
                                         </div>
-                                        <img className={styles.page_block_image} src={events} alt="" />
                                     </div>
                                     <div className={styles.page_block}>
                                         <div className={styles.title}>
-                                            {t("test")}
+                                            {t("role")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t("test-description")}
-                                        </div>
-                                        <img className={styles.page_block_image} src={tests} alt="" />
-                                    </div>
-                                </Popup>
-                            </div>
-                            
-                        </div>
-                        <div className={styles.right_part}>
-                            <img className={styles.right_part_image} src={events} alt="" />
-                        </div>
-                    </div>
 
-                    <div className={styles.work}>
-                        <div className={styles.left_part}>
-                            <div className={styles.text_info}>
-                                <div className={styles.title}>
-                                    Inno Table Tennis
-                                </div>
-                                <div className={styles.info}>
-                                    <div className={styles.text}>
-                                    {t('sport').split('\n').map((line, index) => (
-                                            <span key={index}>
-                                            {line}
-                                            <br />
-                                            </span>
-                                    ))}
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <button onClick={togglePopup3} className={styles.button}>{t("more")}</button>
-                                <Popup show={isPopupVisible3} handleClose={togglePopup3}>
-                                    <div className={styles.display_large}>
-                                        Inno Table Tennis
-                                    </div>
-                                    <div className={cn(styles.text, styles.popup_text)}>
-                                        {t('sport').split('\n').map((line, index) => (
+                                            {/* {t('role-aiu')} */}
+                                            {t('role-aiu').split('\n').map((line, index) => (
                                                 <span key={index}>
                                                 {line}
                                                 <br />
                                                 </span>
-                                        ))}
+                                            ))}
+                                        </div>
                                     </div>
                                     <div className={styles.page_block}>
                                         <div className={styles.title}>
-                                            {t("players")}
+                                            {t("process")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t("players-description")}
+                                            {t('process-aiu').split('\n').map((line, index) => (
+                                                <span key={index}>
+                                                {line}
+                                                <br />
+                                                </span>
+                                            ))}
                                         </div>
-                                        <img className={styles.page_block_image} src={players} alt="" />
                                     </div>
                                     <div className={styles.page_block}>
                                         <div className={styles.title}>
-                                            {t("tournament")}
+                                            {t("results")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t("tournament-description")}
+                                            {t('results-aiu')}  
                                         </div>
-                                        <img className={styles.page_block_image} src={tournament} alt="" />
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("screens")}
+                                        </div>
+                                        <img className={styles.page_block_image} src={aiu1} alt="" />
+                                        <img className={styles.page_block_image} src={aiu2} alt="" />
+                                        <img className={styles.page_block_image} src={aiu3} alt="" />
+                                        <img className={styles.page_block_image} src={aiu4} alt="" />
                                     </div>
                                 </Popup>
                             </div>
-                            
                         </div>
                         <div className={styles.right_part}>
-                            <img className={styles.right_part_image} src={players} alt="" />
+                            <img className={styles.right_part_image} src={aiu1} alt="" />
                         </div>
-                    </div>
+                </div>
+
                 </div>
             </div>
-            <div id="figma" className={styles.choice}>
+            {/* <div id="figma" className={styles.choice}>
                 <div className={styles.large_title}>
                     {t("examples")}
                 </div>
@@ -410,7 +563,7 @@ const Main = () => {
                             <img className={styles.right_part_image} src={portflio} alt="" />
                         </div>
                     </div>
-                    {/* <div className={styles.work}>
+                    <div className={styles.work}>
                         <div className={styles.left_part}>
                             <div className={styles.text_info}>
                                 <div className={styles.title}>
@@ -443,9 +596,9 @@ const Main = () => {
                         <div className={styles.right_part}>
                             <img className={styles.right_part_image} src={booking} alt="" />
                         </div>
-                    </div> */}
+                    </div>
                 </div>
-            </div>
+            </div> */}
 
             <div id="contact" className={styles.choice}>
                 <div className={styles.large_title}>
