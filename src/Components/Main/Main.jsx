@@ -479,8 +479,6 @@ const Main = () => {
                                             {t("role")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-
-                                            {/* {t('role-aiu')} */}
                                             {t('role-aiu').split('\n').map((line, index) => (
                                                 <span key={index}>
                                                 {line}
