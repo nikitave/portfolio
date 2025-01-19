@@ -15,8 +15,8 @@
   
 .popup {
   background: $bg-color;
-  padding: 80px;
-  border-radius: 60px;
+  padding: 60px 40px 20px 40px;
+  border-radius: 30px;
   position: relative;
   max-height: 80%;;
   width: 62.5%;
@@ -51,8 +51,8 @@
   
 
 .close_icon {
-  padding-top: 2.5rem;
-  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-right: .5rem;
   color: $icon;
   transition: .2s linear;
 }

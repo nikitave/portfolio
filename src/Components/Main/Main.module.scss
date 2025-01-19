@@ -148,7 +148,7 @@
 	width: 75%;
 	background-color: $secondary-bg-color;
 	height: 25.125rem;
-	border-radius: 40px;
+	border-radius: 30px;
 	display: flex;
 }
 
@@ -185,10 +185,10 @@
 }
 
 .contact {
-	width: 29%;
+	width: 32%;
 	background-color: $secondary-bg-color;
 	padding: 30px 40px;
-	border-radius: 40px;
+	border-radius: 30px;
 }
 
 .footer {
@@ -278,9 +278,9 @@
 
 .page_block {
 	background-color: $secondary-bg-color;
-	border-radius: 40px;
+	border-radius: 20px;
 	margin-top: 1.5rem;
-	padding: 1.875rem 2.5rem ;
+	padding: 1.5rem 2rem ;
 }
 
 .page_block_text {
@@ -334,7 +334,7 @@
 	border: none;
 	background-color: $main;
 	color: $bg_color;
-	border-radius: 20px;
+	border-radius: 16px;
 	cursor: pointer;
 	transition: 0.2s linear;
 	font-family: "Nunito";
