@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cdd63ac5.css",
-    "main.js": "/portfolio/static/js/main.6abb6f2d.js",
+    "main.js": "/portfolio/static/js/main.d6ef3987.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/comD1.png": "/portfolio/static/media/comD1.9e9bdc62805316ca13cb.png",
     "static/media/backgroundImage.png": "/portfolio/static/media/backgroundImage.985882046dcbaa77b182.png",
     "static/media/comD2.png": "/portfolio/static/media/comD2.a2c7be75899a5dcd835c.png",
     "static/media/aiu2.png": "/portfolio/static/media/aiu2.92008f6ee3c95d5f832a.png",
     "static/media/mu7.png": "/portfolio/static/media/mu7.e5deca295a24b5272f98.png",
-    "static/media/mu3.png": "/portfolio/static/media/mu3.69516e33ff3009cc6bbf.png",
+    "static/media/mu3.png": "/portfolio/static/media/mu3.4a4979a72018c6c99a8a.png",
     "static/media/comD4.png": "/portfolio/static/media/comD4.cc2314ac7b7a2b47e48b.png",
     "static/media/Nunito-Regular.ttf": "/portfolio/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
     "static/media/Nunito-SemiBold.ttf": "/portfolio/static/media/Nunito-SemiBold.77c1e330694154d3efed.ttf",
@@ -20,7 +20,7 @@
     "static/media/mu4.png": "/portfolio/static/media/mu4.51a70f3aac4584d95513.png",
     "static/media/mu2.png": "/portfolio/static/media/mu2.d42443e141a133929223.png",
     "static/media/mu5.png": "/portfolio/static/media/mu5.28041093792497b0b7b8.png",
-    "static/media/aiu4.png": "/portfolio/static/media/aiu4.e88f16a5ac6967bd1b9d.png",
+    "static/media/aiu4.png": "/portfolio/static/media/aiu4.deb21e0ac2400739aae7.png",
     "static/media/aiu3.png": "/portfolio/static/media/aiu3.332b6fc474f93e186a08.png",
     "static/media/comD5.png": "/portfolio/static/media/comD5.1c7cda51744d952eb8d7.png",
     "static/media/aiu1.png": "/portfolio/static/media/aiu1.7e40c328e8a1f576ba1e.png",
@@ -28,11 +28,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/menu.svg": "/portfolio/static/media/menu.63c536e27671485d1666233636906d44.svg",
     "main.cdd63ac5.css.map": "/portfolio/static/css/main.cdd63ac5.css.map",
-    "main.6abb6f2d.js.map": "/portfolio/static/js/main.6abb6f2d.js.map",
+    "main.d6ef3987.js.map": "/portfolio/static/js/main.d6ef3987.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdd63ac5.css",
-    "static/js/main.6abb6f2d.js"
+    "static/js/main.d6ef3987.js"
   ]
 }
