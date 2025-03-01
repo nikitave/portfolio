@@ -300,15 +300,14 @@ const Main = () => {
                                                 <br />
                                                 </span>
                                             ))} */}
-                                            I worked as an <b>only Product Designer</b> in this project <br/>
-                                            1) Conduct <b>user interviews</b> about the previous version. The goal was to learn what was wrong in the previous version <br/>
-                                            2) Check competitors <br/> 
-                                            3) Discuss with the the Manager the required new functionality <br/>
-                                            4) Create <b>several versions</b> of design <br/>
-                                            5) Conduct <b>A/B testing</b> and <b>user interviews</b> <br/>
-                                            6) Fixing mistakes <br/> 
-                                            8) Give the design to frontend developers <br/> 
-                                            9) Conduct <b>design review</b> for frontenders <br/> <br/> 
+                                            1) Conducted <b>user interviews</b> about the previous version. The goal was to learn what was wrong in the previous version <br/>
+                                            2) Checked competitors <br/> 
+                                            3) Discussed with the the Manager the required new functionality <br/>
+                                            4) Created <b>several versions</b> of design <br/>
+                                            5) Conducted <b>A/B testing</b> and <b>user interviews</b> <br/>
+                                            6) Fixed mistakes <br/> 
+                                            8) Gave the design to frontend developers <br/> 
+                                            9) Conducted <b>design review</b> for frontenders <br/> <br/> 
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
@@ -436,11 +435,11 @@ const Main = () => {
                                                 <br />
                                                 </span>
                                             ))} */}
-                                            1) Conduct the <b>TA research</b>, <b>conduct interview</b> using the competitor project <br/>
-                                            2) Identify the functionality of the project <br/>
-                                            3) Create <b>several versions</b> of the design <br/>
-                                            4) Conduct <b>user interview</b> <br/>
-                                            5) Give the design to the frontend developers and conduct <b>design review</b> 
+                                            1) Conducted the <b>TA research</b>, <b>conducted interview</b> using the competitor project <br/>
+                                            2) Identified the functionality of the project <br/>
+                                            3) Created <b>several versions</b> of the design <br/>
+                                            4) Conducted <b>user interview</b> <br/>
+                                            5) Gave the design to the frontend developers and conducted <b>design review</b> 
                                         </div>
                                     </div>
                                     {/* <div className={styles.page_block}>
@@ -494,10 +493,10 @@ const Main = () => {
                                             </span>
                                           ))} */}
                                         <div>- Platform for applicants to Innopolis University (they can also apply to different events)</div>
-                                        <div>- I worked in this project as <b>an only Product Designer</b></div>
-                                        <div>- I conducted <b>full redesign</b></div>
-                                        <div>- I <b>improved the usability</b> of the design </div>
-                                        <div>- I <b>decreased the drop rate</b> from 54% to 23%</div>
+                                        <div>- Worked in this project as <b>an only Product Designer</b></div>
+                                        <div>- Conducted <b>full redesign</b></div>
+                                        <div>- <b>Improved the usability</b> of the design </div>
+                                        <div>- <b>Decreased the drop rate </b> from 54% to 23%</div>
                                     </div>
                                 </div>
                             </div>
@@ -532,7 +531,7 @@ const Main = () => {
                                         <div className={cn(styles.text, styles.page_block_text)}>
                                             {/* {t('problem-aiu')} */}
                                             - Outdated design of the previous version <br/>
-                                            - The drop rate was high <br/>
+                                            - The drop rate of students who didn't complete the application form was high due to UX problems <br/>
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
@@ -547,9 +546,9 @@ const Main = () => {
                                                 </span>
                                             ))} */}
                                             I was a <b>only Product Designer</b> in this project<br/>
-                                            - Maintaining the <b>design system </b> <br/>
-                                            - Conducting <b>user interviews</b> and <b> A/B testing</b> <br/>
-                                            - Creating designs in Figma
+                                            - Maintained the <b>design system </b> <br/>
+                                            - Conducted <b>user interviews</b> and <b> A/B testing</b> <br/>
+                                            - Created designs in Figma
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
@@ -563,11 +562,11 @@ const Main = () => {
                                                 <br />
                                                 </span>
                                             ))} */}
-                                            1) Carefully review the previous version and conduct <b>user interviews</b> to identify the problems <br/>
-                                            2) Discuss with the Project Manager the required functionality <br/>
-                                            3) Create <b>several versions</b> of the design <br/>
-                                            4) Conduct <b>A/B testing</b> and <b>user interview</b> <br/>
-                                            6) Give the designs to frontend developers and then conduct <b>design review</b> 
+                                            1) Carefully reviewed the previous version and conducted <b>user interviews</b> to identify the problems <br/>
+                                            2) Discussed with the Project Manager the required functionality <br/>
+                                            3) Created <b>several versions</b> of the design <br/>
+                                            4) Conducted <b>A/B testing</b> and <b>user interview</b> <br/>
+                                            6) Gave the designs to frontend developers and then conducted <b>design review</b> 
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
