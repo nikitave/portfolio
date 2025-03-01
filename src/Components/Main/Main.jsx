@@ -10,10 +10,15 @@ import comD1 from '../../images/comD1.png';
 import comD2 from '../../images/comD2.png';
 import comD3 from '../../images/comD3.png';
 import comD4 from '../../images/comD4.png';
+import comD5 from '../../images/comD5.png';
+import comD6 from '../../images/comD6.png';
 import mu1 from '../../images/mu1.png';
 import mu2 from '../../images/mu2.png';
 import mu3 from '../../images/mu3.png';
 import mu4 from '../../images/mu4.png';
+import mu5 from '../../images/mu5.png';
+import mu6 from '../../images/mu6.png';
+import mu7 from '../../images/mu7.png';
 import aiu1 from '../../images/aiu1.png';
 import aiu2 from '../../images/aiu2.png';
 import aiu3 from '../../images/aiu3.png';
@@ -137,7 +142,7 @@ const Main = () => {
                         }}
                         viewport={{ once: true }}
                     >
-                        {t("name")} < br/> {t("surname")}
+                        {t("name")} {t("surname")}
                     </motion.div>
                     <motion.div
                         className={styles.content_title}
@@ -155,7 +160,8 @@ const Main = () => {
                         }}
                         viewport={{ once: true }}
                     >
-                        Product Designer
+                        
+                        <b>Product Designer</b> skilled at design systems and complex platforms
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -196,14 +202,14 @@ const Main = () => {
 
                 <div className={styles.works}>
 
-                <div className={styles.work}>
+                    <div className={styles.work}>
                         <div className={styles.left_part}>
                             <div className={styles.text_info}>
                                 <div className={styles.title}>
-                                    ComD
+                                    Platform for students "my.university"
                                 </div>
                                 <div className={styles.text}>
-                                    November 2024 - December 2024
+                                    April 2024 - Current
                                 </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
@@ -213,13 +219,155 @@ const Main = () => {
                                         <div>- Управление командой из трех человек (создание спринтов, проведение митингов, проверка выполнения задач)</div>
                                         - Разработал прототип веб-приложения
                                         <div>- Провел usability тестирование</div> */}
-                                        {t('short-c')}
+                                        {/* {t('short-mu')} */}
                                           {/* {t('my-university').split('\n').map((line, index) => (
                                             <span key={index}>
                                             {line}
                                             <br />
                                             </span>
                                           ))} */}
+                                        <div>- Platform for students with many services</div>
+                                        <div>- I worked in this project as <b>an only Product Designer</b></div>
+                                        <div>- I conducted <b>full redesign</b></div>
+                                        <div>- I <b>improved the usability</b> of the design </div>
+                                        <div>- I increased the number of students using original site from 56% to 93%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button onClick={togglePopupMU} className={styles.button}>{t("more")} </button>
+                                <Popup show={isPopupVisibleMU} handleClose={togglePopupMU}>
+                                    <div className={styles.display_large}>
+                                        Platform for students "my.university"
+                                    </div>
+                                    {/* <div className={cn(styles.text, styles.popup_text)}>\ */}
+                                        {/* {t('short-mu')} */}
+                                        {/* {t('my-university').split('\n').map((line, index) => (
+                                            <span key={index}>
+                                            {line}
+                                            <br />
+                                            </span>
+                                        ))} */}
+                                    {/* </div> */}
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {/* {t("overview")} */} Overview
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {/* {t('overview-mu')} */}
+                                            - Platform with many services for students of Innopolis University
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("problem")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {/* {t('problem-mu')} */}
+                                            - Outdated and hard to use design of the previous version <br/>
+                                            - Students created their own sites for some of the services. <br/>
+                                            - My task was to combine all the functionality in the one site, and to attract students who stopped using original site <br/>
+                                            {/* - We had restricted time limit to complete the project <br/> */}
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("role")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {/* {t('role-mu')} */}
+                                            {/* {t('role-mu').split('\n').map((line, index) => (
+                                            <span key={index}>
+                                            {line}
+                                            <br />
+                                            </span>
+                                          ))} */}
+                                          I work as an <b>only</b> Product Designer<br/> 
+                                          - Creating and maintaining the <b>design system</b> <br/> 
+                                          - Created <b>full redesign</b><br/>
+                                          - Conducting <b>user interviews</b> and <b>A/B testing</b> <br/> 
+                                          - Conducting <b>design review</b> for frontend developers <br/> 
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("process")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {/* {t('process-mu').split('\n').map((line, index) => (
+                                                <span key={index}>
+                                                {line}
+                                                <br />
+                                                </span>
+                                            ))} */}
+                                            I worked as an <b>only Product Designer</b> in this project <br/>
+                                            1) Conduct <b>user interviews</b> about the previous version. The goal was to learn what was wrong in the previous version <br/>
+                                            2) Check competitors <br/> 
+                                            3) Discuss with the the Manager the required new functionality <br/>
+                                            4) Create <b>several versions</b> of design <br/>
+                                            5) Conduct <b>A/B testing</b> and <b>user interviews</b> <br/>
+                                            6) Fixing mistakes <br/> 
+                                            8) Give the design to frontend developers <br/> 
+                                            9) Conduct <b>design review</b> for frontenders <br/> <br/> 
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("results")}
+                                        </div>
+                                        <div className={cn(styles.text, styles.page_block_text)}>
+                                            {/* {t('results-mu')} */} 
+                                            - <b>User satisfaction increased</b> (Many positive reviews were received on the new site) <br/>
+                                            - Most students <b>returned to the original platform</b> (their number increased from 56% to 93%)
+                                        </div>
+                                    </div>
+                                    <div className={styles.page_block}>
+                                        <div className={styles.title}>
+                                            {t("screens")}
+                                        </div>
+                                        <img className={styles.page_block_image} src={mu1} alt="" />
+                                        <img className={styles.page_block_image} src={mu2} alt="" />
+                                        <img className={styles.page_block_image} src={mu3} alt="" />
+                                        <img className={styles.page_block_image} src={mu4} alt="" />
+                                        <img className={styles.page_block_image} src={mu5} alt="" />
+                                        <img className={styles.page_block_image} src={mu6} alt="" />
+                                        <img className={styles.page_block_image} src={mu7} alt="" />
+                                    </div>
+                                </Popup>
+                            </div>
+                        </div>
+                        <div className={styles.right_part}>
+                            <img className={styles.right_part_image} src={mu1} alt="" />
+                        </div>
+                    </div>
+
+                    <div className={styles.work}>
+                        <div className={styles.left_part}>
+                            <div className={styles.text_info}>
+                                <div className={styles.title}>
+                                    ComD
+                                </div>
+                                <div className={styles.text}>
+                                    November 2024 - Current
+                                </div>
+                                <div className={styles.info}>
+                                    <div className={styles.text}>
+                                    {/* Личный кабинет студента Университета Иннополис 
+                                        <div>- Провел исследование и опрос ЦА</div>
+                                        <div>- Создание дизайн системы (библиотека компонентов и гайдлан по использованию шрифтов, цветов и тд)</div>
+                                        <div>- Управление командой из трех человек (создание спринтов, проведение митингов, проверка выполнения задач)</div>
+                                        - Разработал прототип веб-приложения
+                                        <div>- Провел usability тестирование</div> */}
+                                        {/* {t('short-c')} */}
+                                          {/* {t('my-university').split('\n').map((line, index) => (
+                                            <span key={index}>
+                                            {line}
+                                            <br />
+                                            </span>
+                                          ))} */}
+                                          
+                                        <div>- Platform for designers where they take part in competitions and receive feedback from mentors and other designer </div>
+                                        <div>- I worked in this project as <b>an only Product Designer</b></div>
                                     </div>
                                 </div>
                             </div>
@@ -242,29 +390,38 @@ const Main = () => {
                                             {t("overview")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('overview-c')}
+                                            {/* {t('overview-c')} */}
+                                            - Website for designers <br/> 
+                                            - Firstly, designers share their works in any of several disciplines and than they can vote for work of others <br/>
+                                            - In the end they see the rating of their work among all others
                                         </div>
                                     </div>
-                                    <div className={styles.page_block}>
+                                    {/* <div className={styles.page_block}>
                                         <div className={styles.title}>
                                             {t("problem")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('sport-info-description')}
+                                           
+                                            
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className={styles.page_block}>
                                         <div className={styles.title}>
                                             {t("role")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
                                             {/* {t("role-c")} */}
-                                            {t('role-c').split('\n').map((line, index) => (
+                                            {/* {t('role-c').split('\n').map((line, index) => (
                                                 <span key={index}>
                                                 {line}
                                                 <br />
                                                 </span>
-                                            ))}
+                                            ))} */}
+                                            I worked in this project as an <b> only Product designer</b> <br/>
+                                            - Creating and maintaining the <b>design system</b> <br/>
+                                            - Created design
+                                            - Conducting <b>user interview</b> and <b>A/B testing</b> <br/>
+                                            - Conducting <b>research of the Target Audience</b>
                                             
                                         </div>
                                     </div>
@@ -273,12 +430,17 @@ const Main = () => {
                                             {t("process")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                        {t('process-c').split('\n').map((line, index) => (
+                                        {/* {t('process-c').split('\n').map((line, index) => (
                                                 <span key={index}>
                                                 {line}
                                                 <br />
                                                 </span>
-                                            ))}
+                                            ))} */}
+                                            1) Conduct the <b>TA research</b>, <b>conduct interview</b> using the competitor project <br/>
+                                            2) Identify the functionality of the project <br/>
+                                            3) Create <b>several versions</b> of the design <br/>
+                                            4) Conduct <b>user interview</b> <br/>
+                                            5) Give the design to the frontend developers and conduct <b>design review</b> 
                                         </div>
                                     </div>
                                     {/* <div className={styles.page_block}>
@@ -296,6 +458,8 @@ const Main = () => {
                                         <img className={styles.page_block_image} src={comD2} alt="" />
                                         <img className={styles.page_block_image} src={comD4} alt="" />
                                         <img className={styles.page_block_image} src={comD3} alt="" />
+                                        <img className={styles.page_block_image} src={comD5} alt="" />
+                                        <img className={styles.page_block_image} src={comD6} alt="" />
                                     </div>
                                 </Popup>
                             </div>
@@ -303,121 +467,9 @@ const Main = () => {
                         <div className={styles.right_part}>
                             <img className={styles.right_part_image} src={comD1} alt="" />
                         </div>
-                </div>
+                    </div>
 
-                <div className={styles.work}>
-                        <div className={styles.left_part}>
-                            <div className={styles.text_info}>
-                                <div className={styles.title}>
-                                    my.university
-                                </div>
-                                <div className={styles.text}>
-                                    November 2023 - December 2024
-                                </div>
-                                <div className={styles.info}>
-                                    <div className={styles.text}>
-                                    {/* Личный кабинет студента Университета Иннополис 
-                                        <div>- Провел исследование и опрос ЦА</div>
-                                        <div>- Создание дизайн системы (библиотека компонентов и гайдлан по использованию шрифтов, цветов и тд)</div>
-                                        <div>- Управление командой из трех человек (создание спринтов, проведение митингов, проверка выполнения задач)</div>
-                                        - Разработал прототип веб-приложения
-                                        <div>- Провел usability тестирование</div> */}
-                                        {t('short-mu')}
-                                          {/* {t('my-university').split('\n').map((line, index) => (
-                                            <span key={index}>
-                                            {line}
-                                            <br />
-                                            </span>
-                                          ))} */}
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <button onClick={togglePopupMU} className={styles.button}>{t("more")} </button>
-                                <Popup show={isPopupVisibleMU} handleClose={togglePopupMU}>
-                                    <div className={styles.display_large}>
-                                        my.university
-                                    </div>
-                                    {/* <div className={cn(styles.text, styles.popup_text)}>\ */}
-                                        {/* {t('short-mu')} */}
-                                        {/* {t('my-university').split('\n').map((line, index) => (
-                                            <span key={index}>
-                                            {line}
-                                            <br />
-                                            </span>
-                                        ))} */}
-                                    {/* </div> */}
-                                    <div className={styles.page_block}>
-                                        <div className={styles.title}>
-                                            {t("overview")}
-                                        </div>
-                                        <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('overview-mu')}
-                                        </div>
-                                    </div>
-                                    <div className={styles.page_block}>
-                                        <div className={styles.title}>
-                                            {t("problem")}
-                                        </div>
-                                        <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('problem-mu')}
-                                           
-                                        </div>
-                                    </div>
-                                    <div className={styles.page_block}>
-                                        <div className={styles.title}>
-                                            {t("role")}
-                                        </div>
-                                        <div className={cn(styles.text, styles.page_block_text)}>
-                                            {/* {t('role-mu')} */}
-                                            {t('role-mu').split('\n').map((line, index) => (
-                                            <span key={index}>
-                                            {line}
-                                            <br />
-                                            </span>
-                                          ))}
-                                        </div>
-                                    </div>
-                                    <div className={styles.page_block}>
-                                        <div className={styles.title}>
-                                            {t("process")}
-                                        </div>
-                                        <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('process-mu').split('\n').map((line, index) => (
-                                                <span key={index}>
-                                                {line}
-                                                <br />
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className={styles.page_block}>
-                                        <div className={styles.title}>
-                                            {t("results")}
-                                        </div>
-                                        <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('results-mu')}
-                                            
-                                        </div>
-                                    </div>
-                                    <div className={styles.page_block}>
-                                        <div className={styles.title}>
-                                            {t("screens")}
-                                        </div>
-                                        <img className={styles.page_block_image} src={mu1} alt="" />
-                                        <img className={styles.page_block_image} src={mu2} alt="" />
-                                        <img className={styles.page_block_image} src={mu3} alt="" />
-                                        <img className={styles.page_block_image} src={mu4} alt="" />
-                                    </div>
-                                </Popup>
-                            </div>
-                        </div>
-                        <div className={styles.right_part}>
-                            <img className={styles.right_part_image} src={mu1} alt="" />
-                        </div>
-                </div>
-
-                <div className={styles.work}>
+                    <div className={styles.work}>
                         <div className={styles.left_part}>
                             <div className={styles.text_info}>
                                 <div className={styles.title}>
@@ -434,13 +486,18 @@ const Main = () => {
                                         <div>- Управление командой из трех человек (создание спринтов, проведение митингов, проверка выполнения задач)</div>
                                         - Разработал прототип веб-приложения
                                         <div>- Провел usability тестирование</div> */}
-                                        {t('short-aiu')}
+                                        {/* {t('short-aiu')} */}
                                           {/* {t('my-university').split('\n').map((line, index) => (
                                             <span key={index}>
                                             {line}
                                             <br />
                                             </span>
                                           ))} */}
+                                        <div>- Platform for applicants to Innopolis University (they can also apply to different events)</div>
+                                        <div>- I worked in this project as <b>an only Product Designer</b></div>
+                                        <div>- I conducted <b>full redesign</b></div>
+                                        <div>- I <b>improved the usability</b> of the design </div>
+                                        <div>- I <b>decreased the drop rate</b> from 54% to 23%</div>
                                     </div>
                                 </div>
                             </div>
@@ -463,7 +520,9 @@ const Main = () => {
                                             {t("overview")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('overview-aiu')}
+                                            {/* {t('overview-aiu')} */}
+                                            - The site for applicants to the Innopolis University <br/>
+                                            - Applicants not only can apply and pass the tests here, but also they can apply for participation in university events
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
@@ -471,7 +530,9 @@ const Main = () => {
                                             {t("problem")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('problem-aiu')}
+                                            {/* {t('problem-aiu')} */}
+                                            - Outdated design of the previous version <br/>
+                                            - The drop rate was high <br/>
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
@@ -479,12 +540,16 @@ const Main = () => {
                                             {t("role")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('role-aiu').split('\n').map((line, index) => (
+                                            {/* {t('role-aiu').split('\n').map((line, index) => (
                                                 <span key={index}>
                                                 {line}
                                                 <br />
                                                 </span>
-                                            ))}
+                                            ))} */}
+                                            I was a <b>only Product Designer</b> in this project<br/>
+                                            - Maintaining the <b>design system </b> <br/>
+                                            - Conducting <b>user interviews</b> and <b> A/B testing</b> <br/>
+                                            - Creating designs in Figma
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
@@ -492,12 +557,17 @@ const Main = () => {
                                             {t("process")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('process-aiu').split('\n').map((line, index) => (
+                                            {/* {t('process-aiu').split('\n').map((line, index) => (
                                                 <span key={index}>
                                                 {line}
                                                 <br />
                                                 </span>
-                                            ))}
+                                            ))} */}
+                                            1) Carefully review the previous version and conduct <b>user interviews</b> to identify the problems <br/>
+                                            2) Discuss with the Project Manager the required functionality <br/>
+                                            3) Create <b>several versions</b> of the design <br/>
+                                            4) Conduct <b>A/B testing</b> and <b>user interview</b> <br/>
+                                            6) Give the designs to frontend developers and then conduct <b>design review</b> 
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
@@ -505,7 +575,9 @@ const Main = () => {
                                             {t("results")}
                                         </div>
                                         <div className={cn(styles.text, styles.page_block_text)}>
-                                            {t('results-aiu')}  
+                                            {/* {t('results-aiu')}   */}
+                                            - After the redesign, site became more intuitive <br/>
+                                            - The <b>drop rate decreased</b> from 54% to 23%
                                         </div>
                                     </div>
                                     <div className={styles.page_block}>
@@ -523,7 +595,7 @@ const Main = () => {
                         <div className={styles.right_part}>
                             <img className={styles.right_part_image} src={aiu1} alt="" />
                         </div>
-                </div>
+                    </div>
 
                 </div>
             </div>
