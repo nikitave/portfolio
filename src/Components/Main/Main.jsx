@@ -72,15 +72,16 @@ const Main = () => {
         <div className={styles.main}>
 
             <div className={styles.header}>
+                <div className={styles.important_banner}>
+                    New Portfolio is available at <a href="https://bogdankov.framer.website">bogdankov.framer.website</a>
+                </div>
                 <div className={styles.header_elements}>
-                    {/* Burger Menu Icon */}
                     <div className={styles.burger_icon} onClick={toggleBurgerMenu}>
                         <span className={styles.burger_line}></span>
                         <span className={styles.burger_line}></span>
                         <span className={styles.burger_line}></span>
                     </div>
 
-                    {/* Burger Menu Items */}
                     {isBurgerOpen && (
                         <div className={styles.burger_menu}>
                             <a className={styles.links} href="#works" onClick={toggleBurgerMenu}>
@@ -102,14 +103,10 @@ const Main = () => {
                         </div>
                     )}
 
-                    {/* Header Links for Desktop View */}
                     <div className={styles.desktop_links}>
                         <a className={styles.links} href="#works"> 
                             <div className={cn(styles.large_element, styles.links_text)}> {t("works")} </div>
                         </a>
-                        {/* <a className={styles.links} href="#figma"> 
-                            <div className={cn(styles.large_element, styles.links_text)}> {t("examples")} </div>
-                        </a> */}
                         <a className={styles.links} href="#contact">
                             <div className={cn(styles.large_element, styles.links_text)}>{t("contacts")} </div>
                         </a>

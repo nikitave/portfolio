@@ -21,20 +21,33 @@
 	// margin-left: 1%;
 	// margin-top: 10px;
 	display: flex;
+	flex-direction: column;
 	justify-content: flex-end;
 	// border-radius:  0px 0px 20px 20px;
 	box-shadow: 0px 0px 2px;
 	// border: 2px solid #333;
 }
 
-// .header_elements {
-// 	padding-top: 30px;
-// 	padding-bottom: 30px;
-// 	padding-right: 5%;
-// 	align-items: center;
-// 	display: flex;
-// 	gap: 2.5rem;
-// }
+.important_banner {
+	width: 100%;
+	// height: 60px;
+	background: #fbe9e7;
+	color: #ba360a;
+	font-size: 30px;
+	padding: 16px;
+}
+
+.header_elements {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	// padding-top: 30px;
+	// padding-bottom: 30px;
+	// padding-right: 5%;
+	// align-items: center;
+	// display: flex;
+	// gap: 2.5rem;
+}
 
 .burger_menu {
 	display: none;
@@ -48,6 +61,7 @@
 	margin-right: 80px;
 	align-items: center;
 	display: flex;
+	justify-content: flex-end;
 	flex-direction: row;
 	gap: 2.5rem;
 }
