@@ -18,7 +18,7 @@ import mu3 from '../../images/mu3.png';
 import mu4 from '../../images/mu4.png';
 import mu5 from '../../images/mu5.png';
 import mu6 from '../../images/mu6.png';
-import mu7 from '../../images/mu7.png';
+// import mu7 from '../../images/mu7.png';
 import aiu1 from '../../images/aiu1.png';
 import aiu2 from '../../images/aiu2.png';
 import aiu3 from '../../images/aiu3.png';
@@ -327,7 +327,7 @@ const Main = () => {
                                         <img className={styles.page_block_image} src={mu4} alt="" />
                                         <img className={styles.page_block_image} src={mu5} alt="" />
                                         <img className={styles.page_block_image} src={mu6} alt="" />
-                                        <img className={styles.page_block_image} src={mu7} alt="" />
+                                        {/* <img className={styles.page_block_image} src={mu7} alt="" /> */}
                                     </div>
                                 </Popup>
                             </div>
