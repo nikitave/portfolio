@@ -206,7 +206,7 @@ const Main = () => {
                                     Platform for students "my.university"
                                 </div>
                                 <div className={styles.text}>
-                                    April 2024 - Current
+                                    2024
                                 </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
@@ -344,7 +344,7 @@ const Main = () => {
                                     ComD
                                 </div>
                                 <div className={styles.text}>
-                                    November 2024 - Current
+                                    2024
                                 </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
@@ -472,7 +472,7 @@ const Main = () => {
                                     Apply Innopolis University
                                 </div>
                                 <div className={styles.text}>
-                                    November 2022 - April 2023
+                                    2023
                                 </div>
                                 <div className={styles.info}>
                                     <div className={styles.text}>
